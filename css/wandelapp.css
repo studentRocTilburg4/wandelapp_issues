@@ -1,0 +1,49 @@
+html {
+    font-family: Arial;
+    font-size: 16px;
+}
+body {
+    line-height: 1.4em;
+}
+ /*#accordion {*/
+     /*background-color: #eee;*/
+     /*width:100vw;*/
+     /*padding:1em;*/
+     /*position: absolute;*/
+     /*top: 100vh;*/
+ /*}*/
+#accordion div {
+    font-size:1.2em;
+    line-height: 1.2em;
+    display:none;
+    margin-bottom: 2em;
+}
+#accordion h1, #info h1{
+    margin-bottom: 0.6em;
+    font-size: 1.4em;
+    color: #cd1143;
+}
+#map {
+    height: 100vh;
+}
+#upload {
+    overflow-y: auto;
+    transition: opacity .5s;
+    opacity: 1;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    height: 15vw;
+    width: 100vw;
+    background-color: #ddd;
+    padding: 1em;
+    z-index: 102;
+}
+ .marker {
+     display: block;
+     cursor: pointer;
+     background-image: url(../img/marker.svg); /* should be 20px by 20px, important for offset!! */
+     background-size: contain;
+     width:20px;
+     height:20px;
+ }
