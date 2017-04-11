@@ -3,7 +3,7 @@
  * Start project:
  *
  * Maak als projectgroep je eigen Github account aan.
- * 'Fork' wandelapp_basis_project naar jullie nieuwe account (forking is kopieren).
+ * 'Fork' wandelapp_issues naar jullie nieuwe account (forking is kopieren).
  * Ieder lid van de projectgroep maakt in bv. Webstorm een lokale gitkopie.
  * Vergeet niet een npm install te doen (waarom?)
  * Je maakt dit project volgens de scrum-methode. Dat betekent dus dat je de volgende rollen hebt:
@@ -29,7 +29,7 @@
  *
  * Start deze webapp:
  * Na wijzigingen: in de Terminal:
- * wandelapp_basis_project/grunt (waarom?)
+ * wandelapp_issues/grunt (waarom?)
  * Dan in index.html openen (moet via localhost ivm doorgeven postitie device) door in Webstorm
  * te kiezen voor openen in een browser (dan auto via localhost)
  *

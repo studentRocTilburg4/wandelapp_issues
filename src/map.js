@@ -80,24 +80,6 @@ const showroute = function (map, geo_json, defaultzoomlevel) {
         }
     });
 
-    //When a marker is clicked, show description
-    routelayer.on('click', function (e) {
-        var features = map.queryRenderedFeatures(e.point, { layers: ['poi'] });
-
-        if (!features.length) {
-            return;
-        }
-
-        var feature = features[0];
-        console.log(feature);
-        let name = feature.properties.name;
-        let desc = feature.properties.desc;
-        new mapboxgl.Popup()
-            .setLngLat(feature.geometry.coordinates)
-            .setHTML(name + "<br>" + desc)
-            .addTo(map);
-    });
-
     ///////
     // ROUTE
     ///////
@@ -130,6 +112,42 @@ const showroute = function (map, geo_json, defaultzoomlevel) {
     const c = [geo_json.features[0].geometry.coordinates[0][0], geo_json.features[0].geometry.coordinates[0][1]];
     centerlocation(map, c, defaultzoomlevel);
 
+};
+
+//When a marker is clicked, show description
+const loadpoievent = function (map) {
+    map.on('click', function (e) {
+        console.log('asdfasdfasdfasdfasdf');
+        var features = map.queryRenderedFeatures(e.point, { layers: ['poi'] });
+
+        if (!features.length) {
+            return;
+        }
+
+        var feature = features[0];
+        console.log(feature);
+
+        const name = (feature.properties.name === undefined) ? '' : feature.properties.name;
+        const desc = (feature.properties.desc === undefined) ? '' : feature.properties.desc;
+        //Create and show popup
+        // var div = document.createElement('div');
+        // div.innerHTML = "<h1>" + name + "</h1><p>" + desc + "</p>";
+        // div.style.id = 'popup';
+        // div.style.position = "absolute";
+        // div.style.width = "100vw";
+        // div.style.height = "100vh";
+        // div.style.backgroundColor = "white";
+        // div.style.padding = "1em";
+        // div.addEventListener('click', (e) => {
+        //     console.log(e);
+        //     e.target.parentElement.removeChild(e.srcElement);
+        // });
+        // document.body.appendChild(div);
+        new mapboxgl.Popup()
+            .setLngLat(feature.geometry.coordinates)
+            .setHTML("<div style='background-color: white;position:relative;width:30vw;'>" + desc + "</div>")
+            .addTo(map);
+    });
 };
 
 //Current location Marker
@@ -180,4 +198,5 @@ const currentlocation = function(map, defaultzoomlevel, maxage, enablehigh) {
 //expose map functions
 exports.initmap = initmap;
 exports.showroute = showroute;
+exports.loadpoievent= loadpoievent;
 exports.currentlocation = currentlocation;

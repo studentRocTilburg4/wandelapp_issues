@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import Ractive from 'ractive';
-import {initmap, showroute, currentlocation} from './map';
+import {initmap, showroute, loadpoievent, currentlocation} from './map';
 import {getroutesjson, posttextfile} from './routes';
 
 // Init (Ractive) app
@@ -44,6 +44,7 @@ const hikingapp = function(remoteserver) {
         ).catch(function(e) {
             console.log(e);
         });
+        loadpoievent(map);
     });
 
     // Handle upload gpx file to server
