@@ -130,19 +130,6 @@ const loadpoievent = function (map) {
         const name = (feature.properties.name === undefined) ? '' : feature.properties.name;
         const desc = (feature.properties.desc === undefined) ? '' : feature.properties.desc;
         //Create and show popup
-        // var div = document.createElement('div');
-        // div.innerHTML = "<h1>" + name + "</h1><p>" + desc + "</p>";
-        // div.style.id = 'popup';
-        // div.style.position = "absolute";
-        // div.style.width = "100vw";
-        // div.style.height = "100vh";
-        // div.style.backgroundColor = "white";
-        // div.style.padding = "1em";
-        // div.addEventListener('click', (e) => {
-        //     console.log(e);
-        //     e.target.parentElement.removeChild(e.srcElement);
-        // });
-        // document.body.appendChild(div);
         new mapboxgl.Popup()
             .setLngLat(feature.geometry.coordinates)
             .setHTML("<div style='background-color: white;position:relative;width:30vw;'>" + desc + "</div>")
