@@ -117,7 +117,6 @@ const showroute = function (map, geo_json, defaultzoomlevel) {
 //When a marker is clicked, show description
 const loadpoievent = function (map) {
     map.on('click', function (e) {
-        console.log('asdfasdfasdfasdfasdf');
         var features = map.queryRenderedFeatures(e.point, { layers: ['poi'] });
 
         if (!features.length) {
