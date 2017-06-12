@@ -17,6 +17,8 @@ const hikingapp = function(remoteserver) {
 
     //Wait until Ractive is ready
     ractive_ui.on('complete', function() {
+
+        //New mapboxgl map
         map = new Map();
         const geo_options = {
             enableHighAccuracy: true,
@@ -24,18 +26,20 @@ const hikingapp = function(remoteserver) {
             timeout: 10000
         };
 
+        //Get routes from server and show these as choices
         getroutesjson(remoteserver + '/routes').then(
-            function(routesjson) { // Succesfully retreived routes!
+            function(routesjson) {
                 ractive_ui.set("hikes", routesjson);
-                //Watch location device
             },
             function(reason) {
-                console.log(reason); // Error retreiving routes!
+                // Error retreiving routes!
+                console.log(reason);
             }
         ).catch(function(e) {
             console.log(e);
         });
 
+        //Update device location on map
         navigator.geolocation.watchPosition(map.geo_success.bind(map), null, geo_options); //When debugging: test in FF because Chrome wont update position
     });
 
@@ -46,7 +50,7 @@ const hikingapp = function(remoteserver) {
         $(".item").toggle(false);
         $("#route" + filename).toggle(true);
 
-        //Show chosen route
+        //Show chosen route on map
         map.showroute(routeobj.data.json);
     });
 
@@ -66,7 +70,6 @@ const hikingapp = function(remoteserver) {
                                     $("#info").html("Route is toegevoegd");
                                     ractive_ui.set("hikes", routesjson);
                                     //Show chosen route
-                                    console.log(routesjson[0].data.json);
                                     const poilayer = map.showroute(routesjson[0].data.json);
                                 },
                                 function(reason) {
