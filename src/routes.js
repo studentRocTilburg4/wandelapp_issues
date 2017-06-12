@@ -40,7 +40,7 @@ const posttextfile = (remoteserver, file) => {
             const contents = e.target.result;
             const xhr = new XMLHttpRequest();
 
-            xhr.onreadystatechange = function() {
+            xhr.onreadystatechange = () => {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {
                         const res = JSON.parse(xhr.response);

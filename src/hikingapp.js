@@ -4,7 +4,7 @@ import Map from './map';
 import {getroutesjson, posttextfile} from './routes';
 
 // Init (Ractive) app
-const hikingapp = function(remoteserver) {
+const hikingapp = (remoteserver) => {
     'use strict';
 
     //Init
@@ -16,7 +16,7 @@ const hikingapp = function(remoteserver) {
     });
 
     //Wait until Ractive is ready
-    ractive_ui.on('complete', function() {
+    ractive_ui.on('complete', () => {
 
         //New mapboxgl map
         map = new Map();
@@ -27,24 +27,29 @@ const hikingapp = function(remoteserver) {
         };
 
         //Get routes from server and show these as choices
-        getroutesjson(remoteserver + '/routes').then(
-            function(routesjson) {
-                ractive_ui.set("hikes", routesjson);
-            },
-            function(reason) {
-                // Error retreiving routes!
-                console.log(reason);
-            }
-        ).catch(function(e) {
-            console.log(e);
-        });
+        getroutesjson(remoteserver + '/routes')
+            .then(
+                (routesjson) => {
+                    ractive_ui.set("hikes", routesjson);
+                },
+                (reason) => {
+                    // Error retreiving routes!
+                    console.log(reason);
+                }
+            )
+            .catch(
+                (e) => {
+                    console.log(e);
+                }
+            )
+        ;
 
         //Update device location on map
-        navigator.geolocation.watchPosition(map.geo_success.bind(map), null, geo_options); //When debugging: test in FF because Chrome wont update position
+        navigator.geolocation.watchPosition(map.geo_success.bind(map), null, geo_options);
     });
 
     //Show choosen route in map when clicked
-    ractive_ui.on('collapse', function(event, filename, routeobj) {
+    ractive_ui.on('collapse', (event, filename, routeobj) => {
 
         //Toggle description
         $(".item").toggle(false);
@@ -55,30 +60,30 @@ const hikingapp = function(remoteserver) {
     });
 
     // Handle upload gpx file to server
-    ractive_ui.on('uploadgpx', function(event) {
+    ractive_ui.on('uploadgpx', (event) => {
         const file = event.original.target.files[0];
         if (file) {
             //Post route (gpx text file) async
             posttextfile(remoteserver + '/upload', file)
                 .then(
-                    function(){
+                    () => {
                         //Retreive the latest routes async
                         getroutesjson(remoteserver + '/routes')
                             .then(
-                                function(routesjson) {
+                                (routesjson) => {
                                     //Show success
                                     $("#info").html("Route is toegevoegd");
                                     ractive_ui.set("hikes", routesjson);
                                     //Show chosen route
                                     const poilayer = map.showroute(routesjson[0].data.json);
                                 },
-                                function(reason) {
+                                (reason) => {
                                     //error
                                     $("#info").html(reason);
                                 }
                             )
                             .catch(
-                                function(reason) {
+                                (reason) => {
                                     //error
                                     $("#info").html(reason);
                                 }
@@ -87,7 +92,7 @@ const hikingapp = function(remoteserver) {
                     }
                 )
                 .catch(
-                    function(e) {
+                    (e) => {
                         $("#info").html(e);
                     }
                 )
