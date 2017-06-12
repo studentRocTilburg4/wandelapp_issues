@@ -1,31 +1,33 @@
 import $ from 'jquery';
 import Ractive from 'ractive';
-import {initmap, showroute, loadpoievent, currentlocation} from './map';
+import Map from './map';
 import {getroutesjson, posttextfile} from './routes';
 
 // Init (Ractive) app
 const hikingapp = function(remoteserver) {
     'use strict';
 
-    const defaultzoomlevel = 12;
-
-    //Create Ractive object
+    //Init
+    var map = null;
     var ractive_ui = new Ractive({
         el: '#container',
         template: '#template',
         debug: true
     });
 
-    //Init map to draw routes
-    const map = initmap();
-
-    //Handle hiking routes from server
+    //Wait until Ractive is ready
     ractive_ui.on('complete', function() {
+        map = new Map();
+        const geo_options = {
+            enableHighAccuracy: true,
+            maximumAge: 1000,
+            timeout: 10000
+        };
 
         getroutesjson(remoteserver + '/routes').then(
             function(routesjson) { // Succesfully retreived routes!
                 ractive_ui.set("hikes", routesjson);
-                currentlocation(map, defaultzoomlevel);      //Init current location marker
+                //Watch location device
             },
             function(reason) {
                 console.log(reason); // Error retreiving routes!
@@ -33,7 +35,8 @@ const hikingapp = function(remoteserver) {
         ).catch(function(e) {
             console.log(e);
         });
-        loadpoievent(map);
+
+        navigator.geolocation.watchPosition(map.geo_success.bind(map), null, geo_options); //When debugging: test in FF because Chrome wont update position
     });
 
     //Show choosen route in map when clicked
@@ -44,7 +47,7 @@ const hikingapp = function(remoteserver) {
         $("#route" + filename).toggle(true);
 
         //Show chosen route
-        showroute(map, routeobj.data.json, defaultzoomlevel);
+        map.showroute(routeobj.data.json);
     });
 
     // Handle upload gpx file to server
@@ -64,24 +67,28 @@ const hikingapp = function(remoteserver) {
                                     ractive_ui.set("hikes", routesjson);
                                     //Show chosen route
                                     console.log(routesjson[0].data.json);
-                                    const poilayer = showroute(map, routesjson[0].data.json, defaultzoomlevel);
+                                    const poilayer = map.showroute(routesjson[0].data.json);
                                 },
                                 function(reason) {
                                     //error
                                     $("#info").html(reason);
                                 }
-                            ).catch(
-                            function(reason) {
-                                //error
-                                $("#info").html(reason);
-                            });
+                            )
+                            .catch(
+                                function(reason) {
+                                    //error
+                                    $("#info").html(reason);
+                                }
+                            )
+                        ;
                     }
                 )
                 .catch(
                     function(e) {
                         $("#info").html(e);
                     }
-                );
+                )
+            ;
         }
     });
 };
