@@ -26,17 +26,6 @@ const hikingapp = function(remoteserver) {
             function(routesjson) { // Succesfully retreived routes!
                 ractive_ui.set("hikes", routesjson);
                 currentlocation(map, defaultzoomlevel);      //Init current location marker
-
-                //Show choosen route in map when clicked
-                ractive_ui.on('collapse', function(event, filename, routeobj) {
-
-                    //Toggle description
-                    $(".item").toggle(false);
-                    $("#route" + filename).toggle(true);
-
-                    //Show chosen route
-                    showroute(map, routeobj.data.json, defaultzoomlevel);
-                });
             },
             function(reason) {
                 console.log(reason); // Error retreiving routes!
@@ -45,6 +34,17 @@ const hikingapp = function(remoteserver) {
             console.log(e);
         });
         loadpoievent(map);
+    });
+
+    //Show choosen route in map when clicked
+    ractive_ui.on('collapse', function(event, filename, routeobj) {
+
+        //Toggle description
+        $(".item").toggle(false);
+        $("#route" + filename).toggle(true);
+
+        //Show chosen route
+        showroute(map, routeobj.data.json, defaultzoomlevel);
     });
 
     // Handle upload gpx file to server
