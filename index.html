@@ -18,7 +18,7 @@
         <!-- Routes list -->
         <div id="accordion">
             {{#each hikes}}
-                <h1 on-click="collapse:{{data._id}},{{this}}">wandeling {{data.json.features.0.properties.name}}</h1>
+                <h1 on-click="['collapse', data._id, this]">wandeling {{data.json.features.0.properties.name}}</h1>
                 <div class="item" id="route{{data._id}}">
                     {{data.json.features.0.properties.desc}}
                 </div>

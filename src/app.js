@@ -37,6 +37,7 @@
 
 import {hikingapp} from './hikingapp';
 
+// Server that stores route data
 const remoteserver = "https://wandelappbackend-dvriet.rhcloud.com";
 
 document.addEventListener('DOMContentLoaded', () => {
