@@ -1,6 +1,6 @@
 import * as $ from 'jquery';
 
-// Read array with routes from server
+// Read json from server
 const getroutesjson = (remoteserver) => {
     return new Promise((resolve, reject) => { //New promise for array
         let routesjson = [];
