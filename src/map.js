@@ -70,7 +70,7 @@ export default class Map {
         }
 
         /////
-        // POI
+        // POI (points of interest)
         // https://www.mapbox.com/mapbox-gl-js/example/geojson-markers/
         const poi_filter = geo_json.features.filter((feature)=>{
             //If feature.geometry.type isn't Point, delete this feature
