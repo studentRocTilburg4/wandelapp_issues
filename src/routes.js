@@ -51,7 +51,7 @@ const posttextfile = (remoteserver, file) => {
                             resolve();
                         }
                     } else {
-                        reject("Problem posting");
+                        reject("Problem posting " + xhr.status);
                     }
                 }
             };
