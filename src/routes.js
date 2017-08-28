@@ -3,17 +3,16 @@ import * as $ from 'jquery';
 // Read json from server
 const getroutesjson = (remoteserver) => {
     return new Promise((resolve, reject) => { //New promise for array
-        let routesjson = [];
+        // let routesjson = [];
         $.ajax({
                 type: "GET",
                 url: remoteserver,
                 dataType: "json"
             })
             .done((data) => {
-                    data.forEach((f) => {
-                        routesjson.push({
-                            data: f
-                        }); //Save geojson in routesjson array
+            console.log(data);
+                    const routesjson = data.map((f) => {
+                        return {data: f};
                     });
                     resolve(routesjson);
                 }
@@ -23,23 +22,15 @@ const getroutesjson = (remoteserver) => {
 };
 
 //Post a textfile to the server
-const posttextfile = (remoteserver, file) => {
-    'use strict';
-
-    if(remoteserver == null) {
-        remoteserver = "";
-    }
-    if(file == null) {
-        file = "";
-    }
-
+const posttextfile = (remoteserver = "", file = "") => {
 
     return new Promise((resolve, reject) => { //New promise for array
         const reader = new FileReader();
-        reader.onload = (e) => {
+        //Send contents file when read
+        reader.onloadend = (e) => {
             const contents = e.target.result;
-            const xhr = new XMLHttpRequest();
 
+            const xhr = new XMLHttpRequest();
             xhr.onreadystatechange = () => {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {

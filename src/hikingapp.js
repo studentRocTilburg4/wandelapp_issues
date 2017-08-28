@@ -15,6 +15,11 @@ const hikingapp = (remoteserver) => {
     });
     let map = null;
 
+    //Get cuid from localstorage if there is one. Otherwise ask backend (wandelappbackend_issues_v2) for new cuid
+    // CUid is needed to get only the routes that belong to this cuid.
+    // (todo: implement getcuid function in routes.js module)
+    const cuid = 'test'; //Temporarily use a dummy cuid (with the result that all app users see all routes!)
+
     //Wait until Ractive is ready
     ractive_ui.on('complete', () => {
 
@@ -27,7 +32,7 @@ const hikingapp = (remoteserver) => {
         };
 
         //Get routes from server and show these as choices
-        getroutesjson(remoteserver + '/routes')
+        getroutesjson(remoteserver + '/routes?cuid=' + cuid)
             .then(
                 (routesjson) => {
                     ractive_ui.set("hikes", routesjson);
@@ -62,11 +67,11 @@ const hikingapp = (remoteserver) => {
                 const file = event.original.target.files[0];
                 if (file) {
                     //Post route (gpx text file) async
-                    posttextfile(remoteserver + '/upload', file)
+                    posttextfile(remoteserver + '/upload?cuid=' + cuid, file)
                         .then(
                             () => {
                                 //Retreive the latest routes async
-                                getroutesjson(remoteserver + '/routes')
+                                getroutesjson(remoteserver + '/routes?cuid=' + cuid)
                                     .then(
                                         (routesjson) => {
                                             //Show success
