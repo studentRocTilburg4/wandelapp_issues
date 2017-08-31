@@ -11,7 +11,7 @@ Bij dit project hoort een ander project, namelijk wandelappbackend. Hierin hoeft
 De app is voor een deel ontwikkeld maar nog niet af. In de issues in Github staan verbeterpunten die jullie moeten ontwikklen.
 
 
-###Praktisch
+### Praktisch
 
 * Je gaat werken in een projectgroep van 3 leden (door docent bepaald).
 * Maak als <u>projectgroep</u> je eigen Github account aan (dus niet als individuele gebruiker).
