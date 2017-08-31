@@ -10,6 +10,7 @@ Bij dit project hoort een ander project, namelijk wandelappbackend. Hierin hoeft
 
 De app is voor een deel ontwikkeld maar nog niet af. In de issues in Github staan verbeterpunten die jullie moeten ontwikklen.
 
+
 ###Praktisch
 
 * Je gaat werken in een projectgroep van 3 leden (door docent bepaald).
@@ -32,7 +33,8 @@ De app is voor een deel ontwikkeld maar nog niet af. In de issues in Github staa
 * <u>Als tijdens de ontwikkeling tegen problemen aanloopt of extra instructie nodig hebt, ga naar de docent.</u>.
 * <u>Na drie weken wordt klassikaal een retrospective gedaan waarin problemen worden benoemd.</u> 
 
-### Testem Wandelapp
+
+### Testen Wandelapp
 Na wijzigingen in Webstorm: 
 * In de Terminal grunt uitvoeren (waarom?)
 * index.html openen in Webstorm
