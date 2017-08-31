@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="MapSource 6.16.3" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2014-02-17T16:13:56Z</time>
+    <bounds maxlat="52.231502970680594" maxlon="6.896917261183262" minlat="52.218155041337013" minlon="6.888881027698517"/>
+  </metadata>
+
+  <wpt lat="52.218167781829834" lon="6.896624565124512">
+    <time>2014-02-17T16:03:40Z</time>
+    <name>018</name>
+    <cmt>Hendrik Jan Van Heekplein and Raadhuisstraat</cmt>
+    <desc>Hendrik Jan Van Heekplein and Raadhuisstraat</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.22102165222168" lon="6.895272731781006">
+    <time>2014-02-17T16:03:52Z</time>
+    <name>019</name>
+    <cmt>Oude Markt</cmt>
+    <desc>Oude Markt</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.221815586090088" lon="6.895143985748291">
+    <time>2014-02-17T16:04:05Z</time>
+    <name>020</name>
+    <cmt>Noorderhagen and Minkgaarde and Bolwerkstraat</cmt>
+    <desc>Noorderhagen and Minkgaarde and Bolwerkstraat</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.222352027893066" lon="6.895358562469482">
+    <time>2014-02-17T16:04:08Z</time>
+    <name>021</name>
+    <cmt>Minkgaarde and pedestrian</cmt>
+    <desc>Minkgaarde and pedestrian</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.222416400909424" lon="6.895830631256104">
+    <time>2014-02-17T16:04:12Z</time>
+    <name>022</name>
+    <cmt>Wenninkgaarde and Minkgaarde</cmt>
+    <desc>Wenninkgaarde and Minkgaarde</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.223575115203857" lon="6.895614210516214">
+    <time>2014-02-17T16:04:22Z</time>
+    <name>023</name>
+    <cmt>Molenstraat</cmt>
+    <desc>Molenstraat</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.223575115203857" lon="6.895614210516214">
+    <time>2014-02-17T16:04:28Z</time>
+    <name>024</name>
+    <cmt>Molenstraat</cmt>
+    <desc>Molenstraat</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.225334644317627" lon="6.894865036010742">
+    <time>2014-02-17T16:04:35Z</time>
+    <name>025</name>
+    <cmt>H B Blijdensteinlaan and Doctor Benthemstraat</cmt>
+    <desc>H B Blijdensteinlaan and Doctor Benthemstraat</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.225871086120605" lon="6.894950866699219">
+    <time>2014-02-17T16:04:42Z</time>
+    <name>026</name>
+    <cmt>H B Blijdensteinlaan</cmt>
+    <desc>H B Blijdensteinlaan</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.227969244122505" lon="6.896681729704142">
+    <time>2014-02-17T16:04:48Z</time>
+    <name>027</name>
+    <cmt>H B Blijdensteinlaan</cmt>
+    <desc>H B Blijdensteinlaan</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.23074197769165" lon="6.895251274108887">
+    <time>2014-02-17T16:04:55Z</time>
+    <name>028</name>
+    <cmt>cycle route and Museumlaan and street</cmt>
+    <desc>cycle route and Museumlaan and street</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.230978012084961" lon="6.894629001617432">
+    <time>2014-02-17T16:04:59Z</time>
+    <name>029</name>
+    <cmt>cycle route and street</cmt>
+    <desc>cycle route and street</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.231422672048211" lon="6.89505840651691">
+    <time>2014-02-17T16:05:03Z</time>
+    <name>030</name>
+    <cmt>Flamingoroute Altenatieveroutes</cmt>
+    <desc>Flamingoroute Altenatieveroutes</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.231497941538692" lon="6.89481457695365">
+    <time>2014-02-17T16:05:06Z</time>
+    <name>031</name>
+    <cmt>residential area</cmt>
+    <desc>residential area</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.230752035975456" lon="6.888886978849769">
+    <time>2014-02-17T16:05:13Z</time>
+    <name>032</name>
+    <cmt>residential area</cmt>
+    <desc>residential area</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.223167419433594" lon="6.892148042097688">
+    <time>2014-02-17T16:05:31Z</time>
+    <name>033</name>
+    <cmt>Molenstraat</cmt>
+    <desc>Molenstraat</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.223110422492027" lon="6.892557749524713">
+    <time>2014-02-17T16:05:35Z</time>
+    <name>034</name>
+    <cmt>area</cmt>
+    <desc>area</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.22102165222168" lon="6.893105506896973">
+    <time>2014-02-17T16:05:44Z</time>
+    <name>035</name>
+    <cmt>Korte Haaksbergerstraat and Korte Hengelosestraat and Brammelerstraat</cmt>
+    <desc>Korte Haaksbergerstraat and Korte Hengelosestraat and Brammelerstraat</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.220957279205322" lon="6.894049644470215">
+    <time>2014-02-17T16:05:48Z</time>
+    <name>036</name>
+    <cmt>Marktstraat and Walstraat</cmt>
+    <desc>Marktstraat and Walstraat</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.219498157501221" lon="6.894564628601074">
+    <time>2014-02-17T16:05:59Z</time>
+    <name>037</name>
+    <cmt>Pijpenstraat and Walstraat</cmt>
+    <desc>Pijpenstraat and Walstraat</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.218818049877882" lon="6.895230570808053">
+    <time>2014-02-17T16:06:02Z</time>
+    <name>038</name>
+    <cmt>Walstraat 4</cmt>
+    <desc>Walstraat 4</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.218557205051184" lon="6.894772667437792">
+    <time>2014-02-17T16:06:09Z</time>
+    <name>039</name>
+    <cmt>Van Loenshof 38</cmt>
+    <desc>Van Loenshof 38</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.218182617798448" lon="6.895509185269475">
+    <time>2014-02-17T16:06:21Z</time>
+    <name>040</name>
+    <cmt>Hendrik Jan Van Heekplein</cmt>
+    <desc>Hendrik Jan Van Heekplein</desc>
+    <sym>Waypoint</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.220118083059788" lon="6.895808251574636">
+    <time>2014-02-17T14:09:40Z</time>
+    <name>Concordia Kunst en Cultuur</name>
+    <cmt>Concordia Kunst en Cultuur</cmt>
+    <desc>Concordia Kunst en Cultuur</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.225656509399414" lon="6.895616054534912">
+    <time>2014-02-17T14:05:32Z</time>
+    <name>Detakerk</name>
+    <cmt>Detakerk</cmt>
+    <desc>Detakerk</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+        <gpxx:Address>
+          <gpxx:City>Enschede</gpxx:City>
+          <gpxx:State>Overijssel</gpxx:State>
+          <gpxx:Country>NLD</gpxx:Country>
+        </gpxx:Address>
+        <gpxx:PhoneNumber></gpxx:PhoneNumber>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.220711102709174" lon="6.89581629820168">
+    <time>2014-02-17T14:04:04Z</time>
+    <name>Grote Kerk</name>
+    <cmt>Grote Kerk</cmt>
+    <desc>Grote Kerk</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.219080990180373" lon="6.896316949278116">
+    <time>2014-02-17T14:03:25Z</time>
+    <name>Het Ei van Ko</name>
+    <cmt>Het Ei Van Ko</cmt>
+    <desc>Het Ei Van Ko</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.231033751741052" lon="6.895019514486194">
+    <time>2014-02-17T14:29:41Z</time>
+    <name>Jan Cremermuseum</name>
+    <cmt>Jan Cremermuseum</cmt>
+    <desc>Jan Cremermuseum</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.22217969596386" lon="6.895705657079816">
+    <time>2014-02-17T14:12:40Z</time>
+    <name>Muziekcentrum Enschede</name>
+    <cmt>Muziekcentrum</cmt>
+    <desc>Muziekcentrum</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.222695350646973" lon="6.895315647125244">
+    <time>2014-02-17T14:14:05Z</time>
+    <name>Nationaal Muziekkwartier</name>
+    <cmt>Nationaal Muziekkwartier</cmt>
+    <desc>Nationaal Muziekkwartier</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+        <gpxx:Address>
+          <gpxx:City>Enschede</gpxx:City>
+          <gpxx:State>Overijssel</gpxx:State>
+          <gpxx:Country>NLD</gpxx:Country>
+        </gpxx:Address>
+        <gpxx:PhoneNumber></gpxx:PhoneNumber>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.227804958820343" lon="6.896917261183262">
+    <time>2014-02-17T14:18:55Z</time>
+    <name>Rijksmuseum Twenthe</name>
+    <cmt>Rijksmuseum Twente</cmt>
+    <desc>Rijksmuseum Twente</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+        <gpxx:Address>
+          <gpxx:City>Enschede</gpxx:City>
+          <gpxx:State>Overijssel</gpxx:State>
+          <gpxx:Country>NLD</gpxx:Country>
+        </gpxx:Address>
+        <gpxx:PhoneNumber></gpxx:PhoneNumber>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.220056056976318" lon="6.8949294090271">
+    <time>2014-02-17T14:38:36Z</time>
+    <name>Sint Jacobus de meerdere</name>
+    <cmt>Sint Jacobus de Meerdere</cmt>
+    <desc>Sint Jacobus de Meerdere</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+        <gpxx:Address>
+          <gpxx:City>Enschede</gpxx:City>
+          <gpxx:State>Overijssel</gpxx:State>
+          <gpxx:Country>NLD</gpxx:Country>
+        </gpxx:Address>
+        <gpxx:PhoneNumber></gpxx:PhoneNumber>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.228100756183267" lon="6.896460531279445">
+    <time>2014-02-17T14:33:11Z</time>
+    <name>stalen shirt</name>
+    <cmt>stalen shirt</cmt>
+    <desc>stalen shirt</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.230269908905029" lon="6.893405914306641">
+    <time>2014-02-17T14:30:00Z</time>
+    <name>Vloerplaten SE Fireworks</name>
+    <cmt>Vloerplaten SE Fireworks</cmt>
+    <desc>Vloerplaten SE Fireworks</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndDescription</gpxx:DisplayMode>
+        <gpxx:Address>
+          <gpxx:City>Enschede</gpxx:City>
+          <gpxx:State>Overijssel</gpxx:State>
+          <gpxx:Country>NLD</gpxx:Country>
+        </gpxx:Address>
+        <gpxx:PhoneNumber></gpxx:PhoneNumber>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <rte>
+    <name>OV010 rondje cultuur</name>
+    <extensions>
+      <gpxx:RouteExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:IsAutoNamed>false</gpxx:IsAutoNamed>
+        <gpxx:DisplayColor>Magenta</gpxx:DisplayColor>
+      </gpxx:RouteExtension>
+    </extensions>
+    <rtept lat="52.218167781829834" lon="6.896624565124512">
+      <time>2014-02-17T16:03:40Z</time>
+      <name>018</name>
+      <cmt>Hendrik Jan Van Heekplein and Raadhuisstraat</cmt>
+      <desc>Hendrik Jan Van Heekplein and Raadhuisstraat</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>00C000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.22102165222168" lon="6.895272731781006">
+      <time>2014-02-17T16:03:52Z</time>
+      <name>019</name>
+      <cmt>Oude Markt</cmt>
+      <desc>Oude Markt</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>00C000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.221815586090088" lon="6.895143985748291">
+      <time>2014-02-17T16:04:05Z</time>
+      <name>020</name>
+      <cmt>Noorderhagen and Minkgaarde and Bolwerkstraat</cmt>
+      <desc>Noorderhagen and Minkgaarde and Bolwerkstraat</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>00E000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.222352027893066" lon="6.895358562469482">
+      <time>2014-02-17T16:04:08Z</time>
+      <name>021</name>
+      <cmt>Minkgaarde and pedestrian</cmt>
+      <desc>Minkgaarde and pedestrian</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>00C000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.222416400909424" lon="6.895830631256104">
+      <time>2014-02-17T16:04:12Z</time>
+      <name>022</name>
+      <cmt>Wenninkgaarde and Minkgaarde</cmt>
+      <desc>Wenninkgaarde and Minkgaarde</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.223575115203857" lon="6.895614210516214">
+      <time>2014-02-17T16:04:22Z</time>
+      <name>023</name>
+      <cmt>Molenstraat</cmt>
+      <desc>Molenstraat</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.223575115203857" lon="6.895614210516214">
+      <time>2014-02-17T16:04:28Z</time>
+      <name>024</name>
+      <cmt>Molenstraat</cmt>
+      <desc>Molenstraat</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.225334644317627" lon="6.894865036010742">
+      <time>2014-02-17T16:04:35Z</time>
+      <name>025</name>
+      <cmt>H B Blijdensteinlaan and Doctor Benthemstraat</cmt>
+      <desc>H B Blijdensteinlaan and Doctor Benthemstraat</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.225871086120605" lon="6.894950866699219">
+      <time>2014-02-17T16:04:42Z</time>
+      <name>026</name>
+      <cmt>H B Blijdensteinlaan</cmt>
+      <desc>H B Blijdensteinlaan</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>004000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.227969244122505" lon="6.896681729704142">
+      <time>2014-02-17T16:04:48Z</time>
+      <name>027</name>
+      <cmt>H B Blijdensteinlaan</cmt>
+      <desc>H B Blijdensteinlaan</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.23074197769165" lon="6.895251274108887">
+      <time>2014-02-17T16:04:55Z</time>
+      <name>028</name>
+      <cmt>cycle route and Museumlaan and street</cmt>
+      <desc>cycle route and Museumlaan and street</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.230978012084961" lon="6.894629001617432">
+      <time>2014-02-17T16:04:59Z</time>
+      <name>029</name>
+      <cmt>cycle route and street</cmt>
+      <desc>cycle route and street</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>004000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.231422672048211" lon="6.89505840651691">
+      <time>2014-02-17T16:05:03Z</time>
+      <name>030</name>
+      <cmt>Flamingoroute Altenatieveroutes</cmt>
+      <desc>Flamingoroute Altenatieveroutes</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.231497941538692" lon="6.89481457695365">
+      <time>2014-02-17T16:05:06Z</time>
+      <name>031</name>
+      <cmt>residential area</cmt>
+      <desc>residential area</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.230752035975456" lon="6.888886978849769">
+      <time>2014-02-17T16:05:13Z</time>
+      <name>032</name>
+      <cmt>residential area</cmt>
+      <desc>residential area</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.223167419433594" lon="6.892148042097688">
+      <time>2014-02-17T16:05:31Z</time>
+      <name>033</name>
+      <cmt>Molenstraat</cmt>
+      <desc>Molenstraat</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.223110422492027" lon="6.892557749524713">
+      <time>2014-02-17T16:05:35Z</time>
+      <name>034</name>
+      <cmt>area</cmt>
+      <desc>area</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.22102165222168" lon="6.893105506896973">
+      <time>2014-02-17T16:05:44Z</time>
+      <name>035</name>
+      <cmt>Korte Haaksbergerstraat and Korte Hengelosestraat and Brammelerstraat</cmt>
+      <desc>Korte Haaksbergerstraat and Korte Hengelosestraat and Brammelerstraat</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.220957279205322" lon="6.894049644470215">
+      <time>2014-02-17T16:05:48Z</time>
+      <name>036</name>
+      <cmt>Marktstraat and Walstraat</cmt>
+      <desc>Marktstraat and Walstraat</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.219498157501221" lon="6.894564628601074">
+      <time>2014-02-17T16:05:59Z</time>
+      <name>037</name>
+      <cmt>Pijpenstraat and Walstraat</cmt>
+      <desc>Pijpenstraat and Walstraat</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>004000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.218818049877882" lon="6.895230570808053">
+      <time>2014-02-17T16:06:02Z</time>
+      <name>038</name>
+      <cmt>Walstraat 4</cmt>
+      <desc>Walstraat 4</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.218557205051184" lon="6.894772667437792">
+      <time>2014-02-17T16:06:09Z</time>
+      <name>039</name>
+      <cmt>Van Loenshof 38</cmt>
+      <desc>Van Loenshof 38</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.218182617798448" lon="6.895509185269475">
+      <time>2014-02-17T16:06:21Z</time>
+      <name>040</name>
+      <cmt>Hendrik Jan Van Heekplein</cmt>
+      <desc>Hendrik Jan Van Heekplein</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="52.218167781829834" lon="6.896624565124512">
+      <time>2014-02-17T16:03:40Z</time>
+      <name>018</name>
+      <cmt>Hendrik Jan Van Heekplein and Raadhuisstraat</cmt>
+      <desc>Hendrik Jan Van Heekplein and Raadhuisstraat</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>00C000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+  </rte>
+
+  <trk>
+    <name>Untitled Track</name>
+    <trkseg>
+      <trkpt lat="52.218170966953039" lon="6.89662397839129">
+        <ele>41.42989</ele>
+        <time>2014-02-05T13:01:28Z</time>
+      </trkpt>
+      <trkpt lat="52.21832100301981" lon="6.896571004763246">
+        <ele>41.227432999999998</ele>
+        <time>2014-02-05T13:01:36Z</time>
+      </trkpt>
+      <trkpt lat="52.219188027083874" lon="6.896221982315183">
+        <ele>41.525675999999997</ele>
+        <time>2014-02-05T13:02:45Z</time>
+      </trkpt>
+      <trkpt lat="52.220987034961581" lon="6.895288992673159">
+        <ele>41.688012000000001</ele>
+        <time>2014-02-05T13:05:24Z</time>
+      </trkpt>
+      <trkpt lat="52.221048977226019" lon="6.895267032086849">
+        <ele>41.693446999999999</ele>
+        <time>2014-02-05T13:05:30Z</time>
+      </trkpt>
+      <trkpt lat="52.22137201577425" lon="6.895186984911561">
+        <ele>41.621068000000001</ele>
+        <time>2014-02-05T13:05:56Z</time>
+      </trkpt>
+      <trkpt lat="52.221847018226981" lon="6.895171981304884">
+        <ele>41.515771999999998</ele>
+        <time>2014-02-05T13:06:35Z</time>
+      </trkpt>
+      <trkpt lat="52.222008034586906" lon="6.895211040973663">
+        <ele>41.622520999999999</ele>
+        <time>2014-02-05T13:06:50Z</time>
+      </trkpt>
+      <trkpt lat="52.222370970994234" lon="6.895389994606376">
+        <ele>41.839778000000003</ele>
+        <time>2014-02-05T13:07:18Z</time>
+      </trkpt>
+      <trkpt lat="52.22242696210742" lon="6.895869020372629">
+        <ele>41.935712000000002</ele>
+        <time>2014-02-05T13:07:31Z</time>
+      </trkpt>
+      <trkpt lat="52.223052000626922" lon="6.895690988749266">
+        <ele>41.639726000000003</ele>
+        <time>2014-02-05T13:08:14Z</time>
+      </trkpt>
+      <trkpt lat="52.223580982536077" lon="6.895666010677815">
+        <ele>41.392833000000003</ele>
+        <time>2014-02-05T13:08:50Z</time>
+      </trkpt>
+      <trkpt lat="52.22360897809267" lon="6.895503988489509">
+        <ele>41.345849000000001</ele>
+        <time>2014-02-05T13:08:57Z</time>
+      </trkpt>
+      <trkpt lat="52.223976021632552" lon="6.895396029576659">
+        <ele>41.175863</ele>
+        <time>2014-02-05T13:09:22Z</time>
+      </trkpt>
+      <trkpt lat="52.224228987470269" lon="6.895202994346619">
+        <ele>41.049453999999997</ele>
+        <time>2014-02-05T13:09:40Z</time>
+      </trkpt>
+      <trkpt lat="52.224652022123337" lon="6.894997972995043">
+        <ele>40.854336000000004</ele>
+        <time>2014-02-05T13:10:09Z</time>
+      </trkpt>
+      <trkpt lat="52.224802980199456" lon="6.894917003810406">
+        <ele>40.780186</ele>
+        <time>2014-02-05T13:10:20Z</time>
+      </trkpt>
+      <trkpt lat="52.225364986807108" lon="6.894847014918923">
+        <ele>40.530509000000002</ele>
+        <time>2014-02-05T13:10:56Z</time>
+      </trkpt>
+      <trkpt lat="52.225873013958335" lon="6.894909963011742">
+        <ele>40.304870000000001</ele>
+        <time>2014-02-05T13:11:29Z</time>
+      </trkpt>
+      <trkpt lat="52.226261012256145" lon="6.895178016275168">
+        <ele>40.144024000000002</ele>
+        <time>2014-02-05T13:11:52Z</time>
+      </trkpt>
+      <trkpt lat="52.227372033521533" lon="6.896162973716855">
+        <ele>41.172414000000003</ele>
+        <time>2014-02-05T13:13:35Z</time>
+      </trkpt>
+      <trkpt lat="52.227755002677441" lon="6.8965819850564">
+        <ele>41.304583000000001</ele>
+        <time>2014-02-05T13:15:13Z</time>
+      </trkpt>
+      <trkpt lat="52.227975027635694" lon="6.896679969504476">
+        <ele>40.890863000000003</ele>
+        <time>2014-02-05T13:16:31Z</time>
+      </trkpt>
+      <trkpt lat="52.228928972035646" lon="6.896155010908842">
+        <ele>39.577724000000003</ele>
+        <time>2014-02-05T13:17:15Z</time>
+      </trkpt>
+      <trkpt lat="52.229363992810249" lon="6.895952001214027">
+        <ele>40.83455</ele>
+        <time>2014-02-05T13:17:46Z</time>
+      </trkpt>
+      <trkpt lat="52.230660002678633" lon="6.895296033471823">
+        <ele>40.345669000000001</ele>
+        <time>2014-02-05T13:19:52Z</time>
+      </trkpt>
+      <trkpt lat="52.230680035427213" lon="6.895284969359636">
+        <ele>40.994594999999997</ele>
+        <time>2014-02-05T13:20:36Z</time>
+      </trkpt>
+      <trkpt lat="52.230733009055257" lon="6.895268959924579">
+        <ele>41.456288999999998</ele>
+        <time>2014-02-05T13:20:40Z</time>
+      </trkpt>
+      <trkpt lat="52.230970971286297" lon="6.894644005224109">
+        <ele>42.318759999999997</ele>
+        <time>2014-02-05T13:21:11Z</time>
+      </trkpt>
+      <trkpt lat="52.231430970132351" lon="6.89503401517868">
+        <ele>40.607641999999998</ele>
+        <time>2014-02-05T13:22:15Z</time>
+      </trkpt>
+      <trkpt lat="52.231502970680594" lon="6.89479798078537">
+        <ele>38.687466000000001</ele>
+        <time>2014-02-05T13:22:45Z</time>
+      </trkpt>
+      <trkpt lat="52.23142703063786" lon="6.894006980583072">
+        <ele>39.639744</ele>
+        <time>2014-02-05T13:24:01Z</time>
+      </trkpt>
+      <trkpt lat="52.230752035975456" lon="6.888886978849769">
+        <ele>38.947719999999997</ele>
+        <time>2014-02-05T13:28:04Z</time>
+      </trkpt>
+      <trkpt lat="52.23063200712204" lon="6.888897037133575">
+        <ele>39.830053999999997</ele>
+        <time>2014-02-05T13:28:36Z</time>
+      </trkpt>
+      <trkpt lat="52.230605017393827" lon="6.888881027698517">
+        <ele>39.842272999999999</ele>
+        <time>2014-02-05T13:28:39Z</time>
+      </trkpt>
+      <trkpt lat="52.229012036696076" lon="6.889688037335873">
+        <ele>39.701070999999999</ele>
+        <time>2014-02-05T13:31:14Z</time>
+      </trkpt>
+      <trkpt lat="52.228557989001274" lon="6.889933040365577">
+        <ele>39.675663</ele>
+        <time>2014-02-05T13:31:41Z</time>
+      </trkpt>
+      <trkpt lat="52.228533010929823" lon="6.889988025650382">
+        <ele>39.675235999999998</ele>
+        <time>2014-02-05T13:31:47Z</time>
+      </trkpt>
+      <trkpt lat="52.228369982913136" lon="6.890045022591949">
+        <ele>39.673544</ele>
+        <time>2014-02-05T13:32:07Z</time>
+      </trkpt>
+      <trkpt lat="52.228328995406628" lon="6.890039993450046">
+        <ele>39.673116</ele>
+        <time>2014-02-05T13:32:13Z</time>
+      </trkpt>
+      <trkpt lat="52.227309001609683" lon="6.890507033094764">
+        <ele>39.662382000000001</ele>
+        <time>2014-02-05T13:34:25Z</time>
+      </trkpt>
+      <trkpt lat="52.227227026596665" lon="6.890546008944511">
+        <ele>38.544277000000001</ele>
+        <time>2014-02-05T13:34:53Z</time>
+      </trkpt>
+      <trkpt lat="52.225463977083564" lon="6.891354024410248">
+        <ele>40.417904</ele>
+        <time>2014-02-05T13:37:32Z</time>
+      </trkpt>
+      <trkpt lat="52.225399017333984" lon="6.89140004105866">
+        <ele>40.461857999999999</ele>
+        <time>2014-02-05T13:37:39Z</time>
+      </trkpt>
+      <trkpt lat="52.224584966897964" lon="6.891589974984527">
+        <ele>40.293815000000002</ele>
+        <time>2014-02-05T13:39:49Z</time>
+      </trkpt>
+      <trkpt lat="52.224339041858912" lon="6.891654012724757">
+        <ele>40.180880000000002</ele>
+        <time>2014-02-05T13:40:26Z</time>
+      </trkpt>
+      <trkpt lat="52.224008962512016" lon="6.891759037971497">
+        <ele>40.184088000000003</ele>
+        <time>2014-02-05T13:40:56Z</time>
+      </trkpt>
+      <trkpt lat="52.223741998896003" lon="6.89187303185463">
+        <ele>40.186720999999999</ele>
+        <time>2014-02-05T13:41:21Z</time>
+      </trkpt>
+      <trkpt lat="52.223409991711378" lon="6.892049973830581">
+        <ele>40.190033999999997</ele>
+        <time>2014-02-05T13:41:52Z</time>
+      </trkpt>
+      <trkpt lat="52.22324101254344" lon="6.892149969935417">
+        <ele>40.191743000000002</ele>
+        <time>2014-02-05T13:42:08Z</time>
+      </trkpt>
+      <trkpt lat="52.223118972033262" lon="6.89221803098917">
+        <ele>40.192954</ele>
+        <time>2014-02-05T13:42:20Z</time>
+      </trkpt>
+      <trkpt lat="52.223108997568488" lon="6.892613992094994">
+        <ele>40.194870000000002</ele>
+        <time>2014-02-05T13:42:38Z</time>
+      </trkpt>
+      <trkpt lat="52.222622008994222" lon="6.892772996798158">
+        <ele>40.434857999999998</ele>
+        <time>2014-02-05T13:43:25Z</time>
+      </trkpt>
+      <trkpt lat="52.222411958500743" lon="6.892864024266601">
+        <ele>40.223520000000001</ele>
+        <time>2014-02-05T13:43:45Z</time>
+      </trkpt>
+      <trkpt lat="52.222101995721459" lon="6.892962008714676">
+        <ele>39.920099999999998</ele>
+        <time>2014-02-05T13:44:13Z</time>
+      </trkpt>
+      <trkpt lat="52.221689019352198" lon="6.892958991229534">
+        <ele>39.559398000000002</ele>
+        <time>2014-02-05T13:44:48Z</time>
+      </trkpt>
+      <trkpt lat="52.221491960808635" lon="6.892962008714676">
+        <ele>40.283251999999997</ele>
+        <time>2014-02-05T13:45:04Z</time>
+      </trkpt>
+      <trkpt lat="52.2213089838624" lon="6.892997967079282">
+        <ele>40.938634</ele>
+        <time>2014-02-05T13:45:18Z</time>
+      </trkpt>
+      <trkpt lat="52.221097005531192" lon="6.893137022852898">
+        <ele>41.676907999999997</ele>
+        <time>2014-02-05T13:45:38Z</time>
+      </trkpt>
+      <trkpt lat="52.220992986112833" lon="6.893397029489279">
+        <ele>41.807108999999997</ele>
+        <time>2014-02-05T13:45:55Z</time>
+      </trkpt>
+      <trkpt lat="52.220984017476439" lon="6.893762983381748">
+        <ele>41.901918000000002</ele>
+        <time>2014-02-05T13:46:06Z</time>
+      </trkpt>
+      <trkpt lat="52.220973037183285" lon="6.894070012494922">
+        <ele>41.833858999999997</ele>
+        <time>2014-02-05T13:46:22Z</time>
+      </trkpt>
+      <trkpt lat="52.220873963087797" lon="6.894059032201767">
+        <ele>41.798017999999999</ele>
+        <time>2014-02-05T13:46:30Z</time>
+      </trkpt>
+      <trkpt lat="52.220591995865107" lon="6.894091973081231">
+        <ele>41.710808999999998</ele>
+        <time>2014-02-05T13:46:50Z</time>
+      </trkpt>
+      <trkpt lat="52.220453023910522" lon="6.894118040800095">
+        <ele>41.704006</ele>
+        <time>2014-02-05T13:47:01Z</time>
+      </trkpt>
+      <trkpt lat="52.22004197537899" lon="6.894247960299254">
+        <ele>42.141649999999998</ele>
+        <time>2014-02-05T13:47:34Z</time>
+      </trkpt>
+      <trkpt lat="52.219484997913241" lon="6.894581979140639">
+        <ele>41.080800000000004</ele>
+        <time>2014-02-05T13:48:13Z</time>
+      </trkpt>
+      <trkpt lat="52.219102028757334" lon="6.894911974668503">
+        <ele>41.284999999999997</ele>
+        <time>2014-02-05T13:49:39Z</time>
+      </trkpt>
+      <trkpt lat="52.218821989372373" lon="6.895279018208385">
+        <ele>41.40475</ele>
+        <time>2014-02-05T13:50:29Z</time>
+      </trkpt>
+      <trkpt lat="52.218547984957695" lon="6.894760010764003">
+        <ele>41.495928999999997</ele>
+        <time>2014-02-05T13:51:07Z</time>
+      </trkpt>
+      <trkpt lat="52.21827900968492" lon="6.895331991836429">
+        <ele>41.737513999999997</ele>
+        <time>2014-02-05T13:52:00Z</time>
+      </trkpt>
+      <trkpt lat="52.218220001086593" lon="6.895532989874482">
+        <ele>41.588577999999998</ele>
+        <time>2014-02-05T13:52:10Z</time>
+      </trkpt>
+      <trkpt lat="52.218183036893606" lon="6.896015033125877">
+        <ele>41.264152000000003</ele>
+        <time>2014-02-05T13:52:32Z</time>
+      </trkpt>
+      <trkpt lat="52.218179013580084" lon="6.896317033097148">
+        <ele>41.091594000000001</ele>
+        <time>2014-02-05T13:52:43Z</time>
+      </trkpt>
+      <trkpt lat="52.2181729786098" lon="6.896517025306821">
+        <ele>44.177554999999998</ele>
+        <time>2014-02-05T13:53:05Z</time>
+      </trkpt>
+      <trkpt lat="52.218166021630168" lon="6.896574022248387">
+        <ele>44.288941999999999</ele>
+        <time>2014-02-05T13:53:06Z</time>
+      </trkpt>
+      <trkpt lat="52.218155041337013" lon="6.896659014746547">
+        <ele>44.312677000000001</ele>
+        <time>2014-02-05T13:53:06Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+
+</gpx>

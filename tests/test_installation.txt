@@ -14,9 +14,9 @@ Voeg bestand .babelrc toe met de voglende inhoud:
 Runnen m.b.v. de browser (onderstaande steeds herhalen bij aanpassingen in het script!)
 (met babelify van es6 naar es5 en browserify om naar 1 bestand te converteren om vervolgens in de browser te kunnen runnen op localhost:2222):
 
-browserify -t babelify unit_tests/*.js | browser-run -p 2222
+browserify -t babelify tests/*.js | browser-run -p 2222
 en ga naar http://localhost:2222
 
 
 Eventueel alleen in de terminal (gaat fout bij jquery):
-babel-node unit_tests/test_routes.js | faucet
+babel-node tests/test_routes.js | faucet
