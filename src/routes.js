@@ -1,6 +1,10 @@
 import * as $ from 'jquery';
 
-// Read json from server
+/**
+ * Read json from remoteserver
+ * @param remoteserver
+ * @returns {Promise}
+ */
 const getroutesjson = (remoteserver) => {
     return new Promise((resolve, reject) => { //New promise for array
         // let routesjson = [];
@@ -21,7 +25,12 @@ const getroutesjson = (remoteserver) => {
     });
 };
 
-//Post a textfile to the server
+/**
+ * Post a textfile to the remoteserver
+ * @param remoteserver
+ * @param file
+ * @returns {Promise}
+ */
 const posttextfile = (remoteserver = "", file = "") => {
 
     return new Promise((resolve, reject) => { //New promise for array
