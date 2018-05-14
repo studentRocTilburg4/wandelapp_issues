@@ -45,6 +45,8 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * Elke demo is door de scrummaster en het ontwikkelteam op professionele wijze uitgevoerd.
 * De verschillende documenten zijn in de juiste mappen terug te vinden. 
 * Het Trello-board / scrumboard is gebruikt tijdens de ontwikkeling.
+* Ieder lid van het team heeft zich maximaal ingezet. 
+* Ieder lid van het team heeft onderdelen gemaakt (dat kan ook m.b.v. pair programming zijn geweest).
 
 ### Wandelappbackend
 * De webapp maakt gebruik van een backend (wandelappbackend).
