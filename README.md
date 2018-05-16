@@ -19,7 +19,8 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * Je gaat werken in een projectgroep van 3 tot 4 leden (door docent bepaald).
 * Maak als <u>projectgroep</u> je eigen Github account aan (dus niet als individuele gebruiker).
 * 'Fork' wandelapp_issues naar jullie nieuwe account (forking is kopieren).
-* Ieder lid van de projectgroep maakt in bv. Webstorm een lokale gitkopie.
+* Importeer de issues m.b.v. https://gavinr.com/2016/07/04/github-csv-import/
+* Ieder lid van de projectgroep maakt in bv. Webstorm een lokale gitkopie (clone).
 * Vergeet niet een npm install te doen (waarom?)
 * Je werkt aan dit project volgens de scrum-methode. Bepaal de rollen:
   - scrummaster
@@ -45,7 +46,7 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * Elke demo is door de scrummaster en het ontwikkelteam op professionele wijze uitgevoerd.
 * De verschillende documenten zijn in de juiste mappen terug te vinden. 
 * Het Trello-board / scrumboard is gebruikt tijdens de ontwikkeling.
-* Ieder lid van het team heeft zich maximaal ingezet. 
+* Ieder lid van het team heeft zich maximaal ingezet.
 * Ieder lid van het team heeft onderdelen gemaakt (dat kan ook m.b.v. pair programming zijn geweest).
 
 ### Wandelappbackend
