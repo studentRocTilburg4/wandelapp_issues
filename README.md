@@ -1,19 +1,22 @@
-# wandelapp_basis_project
-Webapp which is a base for a student project in which they have to add new features.
+# webapp 'Wandelen met Pietje Puk'
+A student project in which they have to add new features.
 
-##Voor de student
-Voor wandelaars kan het handig zijn om een app te hebben waarop de te wandelen route is aangegeven. Op deze manier kunnen ze nooit de weg kwijtraken.
-Deze app heeft dit als doel. Op een eenvoudige manier moet het mogelijk zijn om een gpx bestand (een speciaal xml bestand met de route) te uploaden.
-Tijdens het wandelen kan de wandelaar de route kiezen en wordt een kaart getoond waarin die route is aangegeven alsmede de positie.
+## Voor de student
+Jij en je projectgroep zijn werkzaam bij het fictieve bedrijf 'StudentROCTilburg'. Het bedrijf heeft verschillende klanten. Een van die klanten is het bedrijf 'WandelNet'.
+
+Voor hen is eerder aan een webapp ontwikkelt dat is bedoeld voor wandelaars. Het heet 'Wandelen met Pietje Puk' maar het is nog niet af. In het kort komt het erop neer dat wandelaars op hun telefoon een wandelroute selecteren en een marker aangeeft waar ze op die route lopen zodat ze de weg niet kwijtraken.
+
+Zoals alle documentatie bij 'StudentROCTilburg' wordt de documentatie die hoort bij dit project op systematische wijze opgeslagen:
+Zie de meegeleverde 'documentatie_wandelnet.zip'. Hierin is onder andere het projectplan te vinden en een Service Level Agreement waarin beschreven is waaraan de bedrijven zich moeten houden. NEEM DIE DOCUMENTATIE GOED DOOR!
 
 Bij dit project hoort een ander project, namelijk wandelappbackend. Hierin hoeft niets ontwikkeld te worden maar je hebt het wel nodig om routes in op te slaan of uit te lezen.
 
-De app is voor een deel ontwikkeld maar nog niet af. In de issues in Github staan verbeterpunten die jullie moeten ontwikklen.
+Zoals vermeld is het project nog niet af, in de issues van dit project staan verbeterpunten die jullie moeten ontwikkelen.
 
 
 ### Praktisch
 
-* Je gaat werken in een projectgroep van 3 leden (door docent bepaald).
+* Je gaat werken in een projectgroep van 3 tot 4 leden (door docent bepaald).
 * Maak als <u>projectgroep</u> je eigen Github account aan (dus niet als individuele gebruiker).
 * 'Fork' wandelapp_issues naar jullie nieuwe account (forking is kopieren).
 * Ieder lid van de projectgroep maakt in bv. Webstorm een lokale gitkopie.
@@ -22,11 +25,11 @@ De app is voor een deel ontwikkeld maar nog niet af. In de issues in Github staa
   - scrummaster
   - product owner
   - developers
-* Maak in Trello een scrumboard met een backlog.
+* Maak in Trello een scrumboard met een backlog van de openstaande issues.
 * De productowner bepaalt de prioriteit van de backlogitems.
 * Werk een aantal backlogitems uit zodat je kunt pokeren.
-* Bepaal welke onderdelen je in de volgende sprint gaat maken. Een sprint mag maximaal 3 weken duren (9 uur per week). In totaal heb je 6 weken, dus twee sprints.
-* Let op: niet ALLE issues hoeven per se opgelost te worden in deze zes weken! Het gaat om kwlaiteit en niet om kwantiteit.
+* Bepaal welke onderdelen je in de volgende sprint gaat maken. Een sprint mag maximaal 3 weken duren (9 uur per week). In totaal heb je 6 weken, dus twee sprints die ieder worden afgesloten met een demo.
+* Let op: niet ALLE issues hoeven per se opgelost te worden in deze zes weken! Het gaat om kwaliteit en niet om kwantiteit.
 * <u>Vraag aan de docent of de gekozen items voor de sprint akkoord zijn.</u>
 * Start de ontwikkeling aan de hand van het scrumboard.
 * Werk met branches tijdens de ontwikkeling! Bekijk: https://www.youtube.com/watch?v=SBuxRiPk2Zg en kies een strategie.
@@ -34,12 +37,16 @@ De app is voor een deel ontwikkeld maar nog niet af. In de issues in Github staa
 * <u>Na drie weken wordt klassikaal een retrospective gedaan waarin problemen worden benoemd.</u> 
 
 
-### Testen Wandelapp
-Na wijzigingen in Webstorm: 
-* In de Terminal grunt uitvoeren (waarom?)
-* index.html openen in Webstorm
-* Kiezen voor openen in Chrome (index.html moet via localhost geopend worden i.v.m. doorgeven postitie device)
+### Oplevering
+* Documenten volgens de mappenstructuur zoals die is aangeleverd.
+* Github repository met daarin een tag van de laatst werkende versie (het resultaat van de laatste demo).
 
+### Beoordeling
+* Elke demo is door de scrummaster en het ontwikkelteam op professionele wijze uitgevoerd.
+* De verschillende documenten zijn in de juiste mappen terug te vinden. 
+* Het Trello-board / scrumboard is gebruikt tijdens de ontwikkeling.
+* Ieder lid van het team heeft zich maximaal ingezet. 
+* Ieder lid van het team heeft onderdelen gemaakt (dat kan ook m.b.v. pair programming zijn geweest).
 
 ### Wandelappbackend
 * De webapp maakt gebruik van een backend (wandelappbackend).
