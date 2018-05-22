@@ -21,6 +21,7 @@
     "tape-promise": "^1.1.0"
   },
   "dependencies": {
+    "github-csv-tools": "^0.3.0",
     "jquery": "~3.1.1",
     "mapbox-gl": "~0.38.0",
     "ractive": "~0.9.0"
