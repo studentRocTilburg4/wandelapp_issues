@@ -1,6 +1,5 @@
 // This is the Service Worker. It helps the app function in an offline enviroment.
 // Geert Soetens
-
 importScripts('cache-polyfill.js');
 
 self.addEventListener('install', function(e) {
@@ -13,7 +12,7 @@ self.addEventListener('install', function(e) {
                 'hikingapp.js',
                 'map.js',
                 'routes.js'
-            ])
+            ]);
         })
-    )
-})
+    );
+});

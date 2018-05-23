@@ -8,31 +8,31 @@ import * as $ from 'jquery';
 const getroutesjson = (remoteserver) => {
     return new Promise((resolve, reject) => { //New promise for array
         // let routesjson = [];
-        fetch(remoteserver)
-            .then(function(response) {
-                return response.json();
+        // fetch(remoteserver)
+        //     .then(function(response) {
+        //         return response.json();
+        //     })
+        //     .then(function(myJson) {
+        //         const routesjson = data.map((f) => {
+        //             return {data: f};
+        //         });
+        //         resolve(routesjson);
+        //         console.log(myJson);
+        //     });
+        $.ajax({
+                type: "GET",
+                url: remoteserver,
+                dataType: "json"
             })
-            .then(function(myJson) {
-                const routesjson = data.map((f) => {
-                    return {data: f};
-                });
-                resolve(routesjson);
-                console.log(myJson);
-            });
-    //     $.ajax({
-    //             type: "GET",
-    //             url: remoteserver,
-    //             dataType: "json"
-    //         })
-    //         .done((data) => {
-    //         console.log(data);
-    //                 const routesjson = data.map((f) => {
-    //                     return {data: f};
-    //                 });
-    //                 resolve(routesjson);
-    //             }
-    //         )
-    //         .fail((err) => reject(err));
+            .done((data) => {
+            console.log(data);
+                    const routesjson = data.map((f) => {
+                        return {data: f};
+                    });
+                    resolve(routesjson);
+                }
+            )
+            .fail((err) => reject(err));
     });
 };
 
