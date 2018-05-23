@@ -13,23 +13,27 @@
     <script id='template' type='text/ractive'>
 
         <!-- Mapbox -->
-        <div id='map'></div>
-
-        <!-- Routes list -->
-        <div id="accordion">
-            {{#each hikes}}
-                <h1 on-click="['collapse', data._id, this]">wandeling {{data.json.features.0.properties.name}}</h1>
-                <div class="item" id="route{{data._id}}">
-                    {{data.json.features.0.properties.desc}}
-                </div>
-            {{/each}}
-        </div>
-
         <!-- Info & upload -->
         <div id="upload">
             <input on-change="uploadgpx" type="file" id="file-input" />
             <div id="info"></div>
         </div>
+        <div id="directions">
+        <div id="accordion">
+                {{#each hikes}}
+                    <h1 on-click="['collapse', data._id, this]">wandeling {{data.json.features.0.properties.name}}</h1>
+                    <div class="item" id="route{{data._id}}">
+                        {{data.json.features.0.properties.desc}}
+                    </div>
+                {{/each}}
+            </div>
+            <div id='map'></div>
+
+            <!-- Routes list -->
+
+        </div>
+
+
 
     </script>
 
