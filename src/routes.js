@@ -1,4 +1,4 @@
-let jsdom = require("jsdom/lib/old-api");
+import * as $ from "jquery";
 /**
  * Read json from remoteserver
  * @param remoteserver
@@ -6,27 +6,20 @@ let jsdom = require("jsdom/lib/old-api");
  */
 const getroutesjson = (remoteserver) => {
 	return new Promise((resolve, reject) => { //New promise for array	
-		jsdom.env("", function(err, window) {
-			if (err) {
-				console.error(err);
-				return;
+		$.ajax({
+			type: "GET",
+			url: remoteserver,
+			dataType: "json"
+		})
+			.done((data) => {
+				console.log(data);
+				const routesjson = data.map((f) => {
+					return {data: f};
+				});
+				resolve(routesjson);
 			}
-			var $ = require("jquery")(window);
-			$.ajax({
-				type: "GET",
-				url: remoteserver,
-				dataType: "json"
-			})
-				.done((data) => {
-					console.log(data);
-					const routesjson = data.map((f) => {
-						return {data: f};
-					});
-					resolve(routesjson);
-				}
-				)
-				.fail((err) => reject(err));
-		});
+			)
+			.fail((err) => reject(err));
 	});
 };
 
