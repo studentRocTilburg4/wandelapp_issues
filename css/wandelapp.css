@@ -8,7 +8,6 @@ body {
 #container{
     min-height: 100vh;
     overflow-y: hidden;
-    /*test*/
 }
 #directions{
     display: flex;
