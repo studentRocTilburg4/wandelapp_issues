@@ -7,7 +7,6 @@
 import tape from "tape";
 import _test from "tape-promise";
 const test = _test(tape); // decorate tape
-
 import {getroutesjson} from "../src/routes";
 
 test("if promise for json-routes retreival works and json is actually json", function(t) {
