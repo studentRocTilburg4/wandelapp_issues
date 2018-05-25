@@ -1,10 +1,14 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
     '/',
+    '/css/wandelapp.css',
     '/src/app.js',
+    '/src/cache-polyfill.js',
+    '/src/hikingapp.js',
     '/src/map.js',
     '/src/routes.js',
 ];
+
 self.addEventListener('install', function(event) {
     // Perform install steps
     event.waitUntil(
