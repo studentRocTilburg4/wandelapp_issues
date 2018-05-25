@@ -6,7 +6,6 @@ import {getroutesjson, posttextfile} from './routes';
 // Hiking app
 const hikingapp = (remoteserver) => {
     'use strict';
-
     //Init
     const ractive_ui = new Ractive({
         el: '#container',
