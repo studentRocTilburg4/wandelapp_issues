@@ -5,14 +5,18 @@
 body {
     line-height: 1.4em;
 }
-
+#container{
+    min-height: 100vh;
+    overflow-y: hidden;
+}
 #directions{
     display: flex;
 }
 #accordion {
     background-color: #eee;
+    overflow: scroll;
     flex: 1;
-
+    height: 100vh;
 }
 #accordion div {
     font-size:1.2em;
@@ -26,7 +30,8 @@ body {
     color: #cd1143;
 }
 #map {
-    height: 100vh;
+    /*height: 100vh;*/
+    min-height: 100vh;
     flex: 2;
 }
 #upload {
