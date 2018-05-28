@@ -1,14 +1,15 @@
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = 'my-site-cache-v2';
 var urlsToCache = [
     '/',
-    '/css/wandelapp.css',
-    '/src/app.js',
-    '/src/cache-polyfill.js',
-    '/src/hikingapp.js',
-    '/src/map.js',
-    '/src/routes.js',
+    'css/wandelapp.css',
+    'src/app.js',
+    'src/cache-polyfill.js',
+    'src/hikingapp.js',
+    'src/map.js',
+    'src/routes.js',
+    'js/app_es5.js',
+    'https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/routes?cuid=test',
 ];
-
 self.addEventListener('install', function(event) {
     // Perform install steps
     event.waitUntil(
