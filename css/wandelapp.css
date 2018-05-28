@@ -5,18 +5,14 @@
 body {
     line-height: 1.4em;
 }
-#container{
-    min-height: 100vh;
-    overflow-y: hidden;
-}
+
 #directions{
     display: flex;
 }
 #accordion {
     background-color: #eee;
-    overflow: scroll;
     flex: 1;
-    height: 100vh;
+
 }
 #accordion div {
     font-size:1.2em;
@@ -30,8 +26,7 @@ body {
     color: #cd1143;
 }
 #map {
-    /*height: 100vh;*/
-    min-height: 100vh;
+    height: 100vh;
     flex: 2;
 }
 #upload {
@@ -49,4 +44,26 @@ body {
        width:20px;
        height:20px;
    }
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #cd1143;
+    display: inline-block;
+    border: 1px solid #cd1143;
+    cursor: pointer;
+}
+#icon1{
+    width: 20px;
+    height: 20px;
+}
 

@@ -1,38 +1,28 @@
-import * as $ from 'jquery';
-
 /**
  * Read json from remoteserver
  * @param remoteserver
  * @returns {Promise}
  */
 const getroutesjson = (remoteserver) => {
+    // console.log(remoteserver);
+
     return new Promise((resolve, reject) => { //New promise for array
         // let routesjson = [];
         fetch(remoteserver)
-            .then(function(response) {
+            .then(function (response) {
                 return response.json();
             })
             .then(function(myJson) {
-                const routesjson = data.map((f) => {
+                const routesjson = myJson.map((f) => {
                     return {data: f};
                 });
-                resolve(routesjson);
                 console.log(myJson);
+                console.log("Fetch werkt!");
+                resolve(routesjson);
+            })
+            .then(function (fail) {
+                reject(fail);
             });
-    //     $.ajax({
-    //             type: "GET",
-    //             url: remoteserver,
-    //             dataType: "json"
-    //         })
-    //         .done((data) => {
-    //         console.log(data);
-    //                 const routesjson = data.map((f) => {
-    //                     return {data: f};
-    //                 });
-    //                 resolve(routesjson);
-    //             }
-    //         )
-    //         .fail((err) => reject(err));
     });
 };
 
@@ -68,7 +58,7 @@ const posttextfile = (remoteserver = "", file = "") => {
             };
 
             xhr.open("POST", remoteserver);
-            xhr.overrideMimeType('text/plain; charset=x-user-defined-binary');
+            xhr.overrideMimeType("text/plain; charset=x-user-defined-binary");
             xhr.send(contents);
         };
         reader.readAsText(file);
