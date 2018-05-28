@@ -7,15 +7,16 @@
 </head>
 <body>
 
-    <!-- should be run on localhost -->
+<!-- should be run on localhost -->
 
-    <!-- Ractive template -->
-    <script id='template' type='text/ractive'>
+<!-- Ractive template -->
+<script id='template' type='text/ractive'>
 
         <!-- Mapbox -->
         <!-- Info & upload -->
         <div id="upload">
-            <input on-change="uploadgpx" type="file" id="file-input" />
+            <input on-change="uploadgpx" type="file" name="file" id="file" class="inputfile" />
+            <label for="file">Route's</label>
             <div id="info"></div>
         </div>
         <div id="directions">
@@ -28,15 +29,17 @@
                 {{/each}}
             </div>
             <div id='map'></div>
+
             <!-- Routes list -->
+
         </div>
     </script>
 
-    <!-- Ractive div/template -->
-    <div id='container'></div>
+<!-- Ractive div/template -->
+<div id='container'></div>
 
-    <link rel="stylesheet" type="text/css" href="css/cssreset.css" />
-    <link rel="stylesheet" type="text/css" href="css/wandelapp.css" />
-    <script src='js/app_es5.js'></script>
+<link rel="stylesheet" type="text/css" href="css/cssreset.css" />
+<link rel="stylesheet" type="text/css" href="css/wandelapp.css" />
+<script src='js/app_es5.js'></script>
 </body>
 </html>

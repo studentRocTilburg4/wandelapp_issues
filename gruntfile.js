@@ -54,17 +54,16 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		// unit test uitvoeren en alleen de unit test!!!!!!!!
 		exec: {
-			log: "echo 'Ga naar localhost:2222 om de unit test uit te voeren'",
-			runtest: "browserify -t babelify ./tests/test_routes.js | browser-run -p 2222",
+			log: "echo \"Ga naar localhost:2222 om de unit test uit te voeren\"",
+			runtest: "browserify -t babelify ./tests/test_map.js ./tests/test_routes.js | browser-run -p 2222",
 		},
 		watch: {
 			js: {
 				files: ["*.js", "src/*.js"],
 				tasks: ["jshint", "browserify"]
 			}
-		}
+		},
 	});
 
 	// These plugins provide necessary tasks.

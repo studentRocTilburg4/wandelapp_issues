@@ -69,12 +69,11 @@ export default class Map {
 			console.log("layer or source doesnt exist");
 		}
 
-		/////
 		// POI (points of interest)
 		// https://www.mapbox.com/mapbox-gl-js/example/geojson-markers/
 		const poi_filter = geo_json.features.filter((feature)=>{
 			//If feature.geometry.type isn"t Point, delete this feature
-			return feature.geometry.type==="Point";
+			return feature.geometry.type === "Point";
 		});
 		const poi = {
 			"type": "geojson",
@@ -97,12 +96,11 @@ export default class Map {
 			}
 		});
 
-		///////
 		// ROUTE
 		// https://www.mapbox.com/mapbox-gl-js/example/geojson-line/
 		const route_filter = geo_json.features.filter((feature)=>{
 			//If feature.geometry.type isn"t LineString
-			return feature.geometry.type==="LineString";
+			return feature.geometry.type === "LineString";
 		});
 		const route = {
 			"type": "geojson",
@@ -132,7 +130,6 @@ export default class Map {
 
 	//You-are-here Marker
 	geo_success(position) {
-		console.log("New pos:" + position);
 		if (this.youarehere) {
 			this.youarehere.remove();
 		}
