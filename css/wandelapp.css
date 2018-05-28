@@ -29,25 +29,41 @@ body {
     height: 100vh;
     flex: 2;
 }
-/*#upload {*/
-    /*overflow-y: auto;*/
-    /*transition: opacity .5s;*/
-    /*opacity: 1;*/
-    /*box-sizing: border-box;*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*height: 15vw;*/
-    /*width: 100vw;*/
-    /*background-color: #ddd;*/
-    /*padding: 1em;*/
-    /*z-index: 102;*/
-/*}*/
- /*.marker {*/
-     /*display: block;*/
-     /*cursor: pointer;*/
-     /*background-image: url(../img/marker.svg); !* should be 20px by 20px, important for offset!! *!*/
-     /*background-size: contain;*/
-     /*width:20px;*/
-     /*height:20px;*/
- /*}*/
+#upload {
+    transition: opacity .5s;
+    opacity: 1;
+    background-color: #ddd;
+    position: relative;
+    top: 0;
+}
+ .marker {
+       display: block;
+       cursor: pointer;
+       background-image: url(../img/marker.svg); /* should be 20px by 20px, important for offset!! */
+       background-size: contain;
+       width:20px;
+       height:20px;
+   }
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #cd1143;
+    display: inline-block;
+    border: 1px solid #cd1143;
+    cursor: pointer;
+}
+#icon1{
+    width: 20px;
+    height: 20px;
+}
 

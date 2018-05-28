@@ -1,4 +1,4 @@
-import $ from 'jquery';
+    import $ from 'jquery';
 import Ractive from 'ractive';
 import Map from './map';
 import {getroutesjson, posttextfile} from './routes';
