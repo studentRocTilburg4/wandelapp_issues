@@ -1,0 +1,22 @@
+Kijk op:
+https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4#.tjgyoad4s
+
+Voer het volgende uit in de terminal in de projectmap:
+sudo npm install -g babel-cli tape faucet browserify browser-run
+sudo npm install --save-dev babel-preset-es2015 babelify tape
+
+Voeg bestand .babelrc toe met de voglende inhoud:
+{
+  "presets": ["es2015"]
+}
+
+
+Runnen m.b.v. de browser (onderstaande steeds herhalen bij aanpassingen in het script!)
+(met babelify van es6 naar es5 en browserify om naar 1 bestand te converteren om vervolgens in de browser te kunnen runnen op localhost:2222):
+
+browserify -t babelify tests/*.js | browser-run -p 2222
+en ga naar http://localhost:2222
+
+
+Eventueel alleen in de terminal (gaat fout bij jquery):
+babel-node tests/test_routes.js | faucet

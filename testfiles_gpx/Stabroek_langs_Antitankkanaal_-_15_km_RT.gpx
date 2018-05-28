@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<gpx
+  version="1.0"
+  creator="VB GPS, Ver 01.03:  vermeiren-willy@pandora.be"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.topografix.com/GPX/1/0"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+
+<bounds minlat="51.333618" minlon="004.347711" maxlat="51.355698" maxlon="004.425902"/>
+<wpt lat="51.339540" lon="004.382043">
+  <name>START</name>
+</wpt>
+
+<rte>
+  <name>Stabroek langs Antitankkanaal - 15 km RT.gpx, Created: 2008-jul-22</name>
+    <rtept lat="51.339540" lon="004.382043">
+      <name>1</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.342888" lon="004.377451">
+      <name>2</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.343305" lon="004.374868">
+      <name>3</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.341107" lon="004.368739">
+      <name>4</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.342448" lon="004.361667">
+      <name>5</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.341043" lon="004.353075">
+      <name>6</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.341043" lon="004.350286">
+      <name>7</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.343489" lon="004.347711">
+      <name>8</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.350441" lon="004.364147">
+      <name>9</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.355505" lon="004.358654">
+      <name>10</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.355634" lon="004.359941">
+      <name>11</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.354782" lon="004.361399">
+      <name>12</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.355298" lon="004.362443">
+      <name>13</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.354647" lon="004.365005">
+      <name>14</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.355698" lon="004.367259">
+      <name>15</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.353188" lon="004.370327">
+      <name>16</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.354990" lon="004.374361">
+      <name>17</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.354389" lon="004.384618">
+      <name>18</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.354561" lon="004.385605">
+      <name>19</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.354218" lon="004.385777">
+      <name>20</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.354046" lon="004.385090">
+      <name>21</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.352243" lon="004.385991">
+      <name>22</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.349883" lon="004.386463">
+      <name>23</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.348510" lon="004.386635">
+      <name>24</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.349154" lon="004.389424">
+      <name>25</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.344819" lon="004.392471">
+      <name>26</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.344476" lon="004.393166">
+      <name>27</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.346836" lon="004.400282">
+      <name>28</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.346668" lon="004.403895">
+      <name>29</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.346750" lon="004.404745">
+      <name>30</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.347424" lon="004.407603">
+      <name>31</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.346193" lon="004.413502">
+      <name>32</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.347265" lon="004.418163">
+      <name>33</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.346965" lon="004.423199">
+      <name>34</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.346659" lon="004.424004">
+      <name>35</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.346536" lon="004.425859">
+      <name>36</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.346321" lon="004.425902">
+      <name>37</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.346406" lon="004.424952">
+      <name>38</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.346149" lon="004.423585">
+      <name>39</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.341043" lon="004.403715">
+      <name>40</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.341772" lon="004.403243">
+      <name>41</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.341600" lon="004.402556">
+      <name>42</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.340914" lon="004.403329">
+      <name>43</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.335979" lon="004.393544">
+      <name>44</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.336150" lon="004.393373">
+      <name>45</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.335721" lon="004.392514">
+      <name>46</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.335506" lon="004.392384">
+      <name>47</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.333618" lon="004.388480">
+      <name>48</name>
+      <sym>Waypoint</sym>
+    </rtept>
+    <rtept lat="51.339412" lon="004.381785">
+      <name>49</name>
+      <sym>Waypoint</sym>
+    </rtept>
+</rte>
+</gpx>
+
