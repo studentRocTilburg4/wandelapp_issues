@@ -56,7 +56,6 @@ const hikingapp = (remoteserver) => {
 	//Events
 	ractive_ui.on({
 		"collapse": (event, filename, routeobj) => {
-			console.log("yes yes yes");
 			//Toggle description
 			$(".item").toggle(false);
 			$("#route" + filename).toggle(true);
@@ -102,7 +101,16 @@ const hikingapp = (remoteserver) => {
 				;
 			}
 		}
-	}
+	},
+	ractive_ui.on({
+		"changeStyle": function changeStyle() {
+			if(map.map.getStyle().sprite === "mapbox://sprites/mapbox/satellite-v9"){
+				map.map.setStyle("mapbox://styles/mapbox/streets-v8");
+			}else {
+				map.map.setStyle("mapbox://sprites/mapbox/satellite-v9");
+			}
+		}
+	})
 	);
 };
 //Expose ractive functions

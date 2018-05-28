@@ -30,7 +30,6 @@ export default class Map {
 			}
 
 			const feature = features[0];
-			console.log(feature);
 
 			const name = (feature.properties.name === undefined) ? "" : feature.properties.name;
 			const desc = (feature.properties.desc === undefined) ? "" : feature.properties.desc;
@@ -47,7 +46,6 @@ export default class Map {
 		if (!lnglat) {
 			return;
 		}
-		console.log(lnglat);
 		this.map.setCenter(lnglat);
 		this.map.setZoom(this.defaultzoomlevel);
 	}
@@ -57,7 +55,7 @@ export default class Map {
 		if(!geo_json) {
 			return;
 		}
-
+		
 		//Remove old layers and sources
 		try {
 			this.map.removeLayer("poi");
@@ -133,6 +131,7 @@ export default class Map {
 		if (this.youarehere) {
 			this.youarehere.remove();
 		}
+		
 		const location = [position.coords.longitude, position.coords.latitude];
 
 		this.youarehere = new mapboxgl.Marker(this.el, {offset: [-10, -10]})
@@ -140,5 +139,4 @@ export default class Map {
 			.addTo(this.map);
 		this.center(location);
 	}
-
 }

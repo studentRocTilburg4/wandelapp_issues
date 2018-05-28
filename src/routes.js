@@ -4,10 +4,7 @@
  * @returns {Promise}
  */
 const getroutesjson = (remoteserver) => {
-	// console.log(remoteserver);
-
 	return new Promise((resolve, reject) => { //New promise for array
-		// let routesjson = [];
 		fetch(remoteserver)
 			.then(function (response) {
 				return response.json();
@@ -16,8 +13,6 @@ const getroutesjson = (remoteserver) => {
 				const routesjson = myJson.map((f) => {
 					return {data: f};
 				});
-				console.log(myJson);
-				console.log("Fetch werkt!");
 				resolve(routesjson);
 			})
 			.then(function (fail) {
@@ -45,7 +40,6 @@ const posttextfile = (remoteserver = "", file = "") => {
 				if (xhr.readyState === 4) {
 					if (xhr.status === 200) {
 						const res = JSON.parse(xhr.response);
-						console.log(res);
 						if(res.error === true){
 							reject(res.msg);
 						} else {
