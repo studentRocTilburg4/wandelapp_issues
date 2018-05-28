@@ -1,7 +1,7 @@
 import Ractive from "ractive";
 import Map from "./map";
 import {getroutesjson, posttextfile} from "./routes";
-import * as $ from "jquery";
+import $ from "jquery";
 // Hiking app
 
 const hikingapp = (remoteserver) => {
