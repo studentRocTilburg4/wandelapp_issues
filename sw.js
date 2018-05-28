@@ -3,6 +3,7 @@ var urlsToCache = [
     '/',
     'css/wandelapp.css',
     'src/app.js',
+    'src/cache-polyfill.js',
     'src/hikingapp.js',
     'src/map.js',
     'src/routes.js',
