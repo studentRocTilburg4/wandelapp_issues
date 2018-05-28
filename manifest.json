@@ -1,3 +1,15 @@
 {
-    "theme-color": "red"
+    "short-name": "Wandel-app",
+    "name": "Wandel-app",
+    "icons": [
+        {
+            "src": "/img/marker.svg",
+            "size": "any"
+        }
+    ],
+    "start_url": "index.html",
+    "background-color": "white",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "red"
 }
