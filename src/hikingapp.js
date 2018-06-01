@@ -57,8 +57,26 @@ const hikingapp = (remoteserver) => {
 	ractive_ui.on({
 		"collapse": (event, filename, routeobj) => {
 			//Toggle description
-			$(".item").toggle(false);
-			$("#route" + filename).toggle(true);
+			// $(".item").toggle(false);
+			const item = document.querySelector('.item');
+			// console.log(item);
+            // item.addEventListener("click", toggle);
+            // function toggle(){
+            //     console.log('a');
+            // }
+
+			// $("#route" + filename).toggle(true);
+			const route = document.querySelectorAll(`.item`);
+            // console.log(route);
+            let routeValue = Object.values(route);
+
+            for (let routeIndex = 0; routeIndex < routeValue.length; routeIndex++) {
+                routeValue[routeIndex].addEventListener('click', function () {
+                	console.log(routeValue[routeIndex]);
+					console.log('a');
+				});
+            }
+
 			//Show chosen route on map
 			map.showroute(routeobj.data.json);
 		},
