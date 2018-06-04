@@ -1,6 +1,9 @@
 import Ractive from "ractive";
 import Map from "./map";
-import {getroutesjson, posttextfile} from "./routes";
+import {
+	getroutesjson,
+	posttextfile
+} from "./routes";
 import $ from "jquery";
 // Hiking app
 
@@ -22,7 +25,7 @@ const hikingapp = (remoteserver) => {
 
 	//Wait until Ractive is ready
 	ractive_ui.on("complete", () => {
-
+		const centerMe = document.querySelector("#centerMe");
 		//New mapbox-gl map
 		map = new Map();
 		const geo_options = {
@@ -46,11 +49,13 @@ const hikingapp = (remoteserver) => {
 				(e) => {
 					console.log(e);
 				}
-			)
-		;
+			);
 
 		//Update device location on map
-		navigator.geolocation.watchPosition(map.geo_success.bind(map), null, geo_options);
+		if (centerMe.checked === true) {
+			navigator.geolocation.watchPosition(map.geo_success.bind(map), null, geo_options);
+		}
+
 	});
 
 	//Events
@@ -59,6 +64,11 @@ const hikingapp = (remoteserver) => {
 			//Toggle description
 			$(".item").toggle(false);
 			$("#route" + filename).toggle(true);
+
+			const centerMe = document.querySelector("#centerMe");
+			if(centerMe.checked === true) {
+				map.center = [4.895168, 52.370216];
+			}
 			//Show chosen route on map
 			map.showroute(routeobj.data.json);
 		},
@@ -89,24 +99,22 @@ const hikingapp = (remoteserver) => {
 										//error
 										$("#info").html(reason);
 									}
-								)
-							;
+								);
 						}
 					)
 					.catch(
 						(e) => {
 							$("#info").html(e);
 						}
-					)
-				;
+					);
 			}
 		}
 	},
 	ractive_ui.on({
 		"changeStyle": function changeStyle() {
-			if(map.map.getStyle().sprite === "mapbox://sprites/mapbox/satellite-v9"){
+			if (map.map.getStyle().sprite === "mapbox://sprites/mapbox/satellite-v9") {
 				map.map.setStyle("mapbox://styles/mapbox/streets-v8");
-			}else {
+			} else {
 				map.map.setStyle("mapbox://sprites/mapbox/satellite-v9");
 			}
 		}
@@ -115,5 +123,3 @@ const hikingapp = (remoteserver) => {
 };
 //Expose ractive functions
 exports.hikingapp = hikingapp;
-// });
-

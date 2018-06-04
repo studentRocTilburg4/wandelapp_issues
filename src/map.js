@@ -13,7 +13,6 @@ class Mapboxgl {
 }
 
 export default class Map {
-
 	//Init
 	constructor() {
 		this.map = new Mapboxgl();
@@ -81,7 +80,7 @@ export default class Map {
 			}
 		};
 		this.map.addSource("poi", poi);
-		let routelayer = this.map.addLayer({
+		this.map.addLayer({
 			"id": "poi",
 			"type": "symbol",
 			"source": "poi",
@@ -130,7 +129,7 @@ export default class Map {
 	geo_success(position) {
 		if (this.youarehere) {
 			this.youarehere.remove();
-		}
+		}	
 		
 		const location = [position.coords.longitude, position.coords.latitude];
 
