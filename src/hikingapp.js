@@ -1,7 +1,6 @@
 import Ractive from "ractive";
 import Map from "./map";
 import {getroutesjson, posttextfile} from "./routes";
-import $ from "jquery";
 // Hiking app
 
 const hikingapp = (remoteserver) => {
@@ -48,7 +47,6 @@ const hikingapp = (remoteserver) => {
 				}
 			)
 		;
-
 		//Update device location on map
 		navigator.geolocation.watchPosition(map.geo_success.bind(map), null, geo_options);
 	});
@@ -68,6 +66,7 @@ const hikingapp = (remoteserver) => {
 		},
 		"uploadgpx": (event) => {
 			const file = event.original.target.files[0];
+            const info = document.getElementById('info');
 			if (file) {
 				//Post route (gpx text file) async
 				posttextfile(remoteserver + "/upload?cuid=" + cuid, file)
@@ -78,20 +77,21 @@ const hikingapp = (remoteserver) => {
 								.then(
 									(routesjson) => {
 										//Show success
-										$("#info").html("Route is toegevoegd");
+
+										info.innerText = "Route is toegevoegd";
 										ractive_ui.set("hikes", routesjson);
 										//Show chosen route
 										map.showroute(routesjson[0].data.json);
 									},
 									(reason) => {
 										//error
-										$("#info").html(reason);
+										info.innerText = reason;
 									}
 								)
 								.catch(
 									(reason) => {
 										//error
-										$("#info").html(reason);
+										info.innerText = reason;
 									}
 								)
 							;
@@ -99,7 +99,7 @@ const hikingapp = (remoteserver) => {
 					)
 					.catch(
 						(e) => {
-							$("#info").html(e);
+							info.innerText = e;
 						}
 					)
 				;
