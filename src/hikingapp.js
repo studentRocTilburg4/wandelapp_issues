@@ -56,26 +56,12 @@ const hikingapp = (remoteserver) => {
 	//Events
 	ractive_ui.on({
 		"collapse": (event, filename, routeobj) => {
-			//Toggle description
-			// $(".item").toggle(false);
-			const item = document.querySelector('.item');
-			// console.log(item);
-            // item.addEventListener("click", toggle);
-            // function toggle(){
-            //     console.log('a');
-            // }
-
-			// $("#route" + filename).toggle(true);
-			const route = document.querySelectorAll(`.item`);
-            // console.log(route);
-            let routeValue = Object.values(route);
-
-            for (let routeIndex = 0; routeIndex < routeValue.length; routeIndex++) {
-                routeValue[routeIndex].addEventListener('click', function () {
-                	console.log(routeValue[routeIndex]);
-					console.log('a');
-				});
+			const item = document.getElementsByClassName('item');
+			for (let x = 0; x < item.length; x++){
+                item[x].style.display = "none";
             }
+			const route = document.getElementById(`route${filename}`);
+			route.style.display = "block";
 
 			//Show chosen route on map
 			map.showroute(routeobj.data.json);
