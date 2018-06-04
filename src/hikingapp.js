@@ -1,10 +1,6 @@
 import Ractive from "ractive";
 import Map from "./map";
-import {
-	getroutesjson,
-	posttextfile
-} from "./routes";
-import $ from "jquery";
+import {getroutesjson, posttextfile} from "./routes";
 // Hiking app
 
 const hikingapp = (remoteserver) => {
@@ -49,8 +45,7 @@ const hikingapp = (remoteserver) => {
 				(e) => {
 					console.log(e);
 				}
-			);
-
+			);	
 		//Update device location on map
 		if (centerMe.checked === true) {
 			navigator.geolocation.watchPosition(map.geo_success.bind(map), null, geo_options);
@@ -61,19 +56,19 @@ const hikingapp = (remoteserver) => {
 	//Events
 	ractive_ui.on({
 		"collapse": (event, filename, routeobj) => {
-			//Toggle description
-			$(".item").toggle(false);
-			$("#route" + filename).toggle(true);
-
-			const centerMe = document.querySelector("#centerMe");
-			if(centerMe.checked === true) {
-				map.center = [4.895168, 52.370216];
+			const item = document.getElementsByClassName("item");
+			for (let x = 0; x < item.length; x++){
+				item[x].style.display = "none";
 			}
+			const route = document.getElementById(`route${filename}`);
+			route.style.display = "block";
+
 			//Show chosen route on map
 			map.showroute(routeobj.data.json);
 		},
 		"uploadgpx": (event) => {
 			const file = event.original.target.files[0];
+			const info = document.getElementById("info");
 			if (file) {
 				//Post route (gpx text file) async
 				posttextfile(remoteserver + "/upload?cuid=" + cuid, file)
@@ -84,27 +79,28 @@ const hikingapp = (remoteserver) => {
 								.then(
 									(routesjson) => {
 										//Show success
-										$("#info").html("Route is toegevoegd");
+
+										info.innerText = "Route is toegevoegd";
 										ractive_ui.set("hikes", routesjson);
 										//Show chosen route
 										map.showroute(routesjson[0].data.json);
 									},
 									(reason) => {
 										//error
-										$("#info").html(reason);
+										info.innerText = reason;
 									}
 								)
 								.catch(
 									(reason) => {
 										//error
-										$("#info").html(reason);
+										info.innerText = reason;
 									}
 								);
 						}
 					)
 					.catch(
 						(e) => {
-							$("#info").html(e);
+							info.innerText = e;
 						}
 					);
 			}
