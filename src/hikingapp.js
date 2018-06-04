@@ -54,10 +54,10 @@ const hikingapp = (remoteserver) => {
 	//Events
 	ractive_ui.on({
 		"collapse": (event, filename, routeobj) => {
-			const item = document.getElementsByClassName('item');
+			const item = document.getElementsByClassName("item");
 			for (let x = 0; x < item.length; x++){
-                item[x].style.display = "none";
-            }
+				item[x].style.display = "none";
+			}
 			const route = document.getElementById(`route${filename}`);
 			route.style.display = "block";
 
@@ -66,7 +66,7 @@ const hikingapp = (remoteserver) => {
 		},
 		"uploadgpx": (event) => {
 			const file = event.original.target.files[0];
-            const info = document.getElementById('info');
+			const info = document.getElementById("info");
 			if (file) {
 				//Post route (gpx text file) async
 				posttextfile(remoteserver + "/upload?cuid=" + cuid, file)

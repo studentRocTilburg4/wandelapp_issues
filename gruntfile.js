@@ -37,7 +37,6 @@ module.exports = function(grunt) {
 			main: {
 				files: [
 					// Copy jquery and ractive
-					{expand: true, cwd: "./node_modules/jquery/dist/", src: "jquery.js", dest: "./js/jquery/"},
 					{expand: true, cwd: "./node_modules/ractive/", src: "ractive.js", dest: "./js/ractive/"}
 				],
 			},
