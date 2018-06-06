@@ -19,6 +19,9 @@ self.addEventListener('install',    function(event) {
                 console.log('Opened cache');
                 return cache.addAll(urlsToCache);
             })
+            .catch(function(error) {
+                console.log("Failed to open cache. Returned with : " + error);
+            })
     );
 });
 self.addEventListener('fetch', function(event) {
@@ -47,7 +50,7 @@ self.addEventListener('fetch', function(event) {
                 }
             )
             .catch(function(error) {
-                console.log("Failed to retrieve response.")
+                console.log("Failed to retrieve response." + error);
             })
     );
 });
