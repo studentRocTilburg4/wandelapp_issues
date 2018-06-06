@@ -20,7 +20,7 @@ export default class Map {
 		this.youarehere = null;
 		this.el = document.createElement("div");
 		this.el.className = "marker";
-
+		this.map.setZoom(this.defaultzoomlevel);
 
 		this.map.on("click", function (e) {
 			const features = this.map.queryRenderedFeatures(e.point, { layers: ["poi"] });
@@ -46,7 +46,6 @@ export default class Map {
 			return;
 		}
 		this.map.setCenter(lnglat);
-		this.map.setZoom(this.defaultzoomlevel);
 	}
 
 	//Show route and set events

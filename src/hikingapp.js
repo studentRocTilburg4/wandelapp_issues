@@ -21,14 +21,9 @@ const hikingapp = (remoteserver) => {
 
 	//Wait until Ractive is ready
 	ractive_ui.on("complete", () => {
-		const geo_options = {
-			enableHighAccuracy: true,
-			maximumAge: 1000,
-			timeout: 10000
-		};
 		//New mapbox-gl map
 		map = new Map();
-		const centerMe = document.querySelector("#centerMe");
+		const notCenterMe = document.querySelector("#notCenterMe");
 		//Get routes from server and show these as choices
 		getroutesjson(remoteserver + "/routes?cuid=" + cuid)
 			.then(
@@ -45,27 +40,17 @@ const hikingapp = (remoteserver) => {
 					console.log(e);
 				}
 			);	
-		//Update device location on map
+		//Update device location on map		
 		setInterval(function(){
-			if (centerMe.checked === true) {
-				navigator.geolocation.watchPosition(map.geo_success.bind(map), null, geo_options);
-				console.log("checked");
-			}else {
-				console.log("nah");
+			if (notCenterMe.checked !== true) {
+				navigator.geolocation.getCurrentPosition(map.geo_success.bind(map));
 			}
 		}, 1000);
-		
 	});
 
 	//Events
 	ractive_ui.on({
-		"collapse": (event, filename, routeobj) => {
-			const geo_options = {
-				enableHighAccuracy: true,
-				maximumAge: 1000,
-				timeout: 10000
-			};
-			
+		"collapse": (event, filename, routeobj) => {			
 			const item = document.getElementsByClassName("item");
 			for (let x = 0; x < item.length; x++){
 				item[x].style.display = "none";
@@ -114,9 +99,7 @@ const hikingapp = (remoteserver) => {
 						}
 					);
 			}
-		}
-	},
-	ractive_ui.on({
+		},
 		"changeStyle": function changeStyle() {
 			if (map.map.getStyle().sprite === "mapbox://sprites/mapbox/satellite-v9") {
 				map.map.setStyle("mapbox://styles/mapbox/streets-v8");
@@ -124,8 +107,7 @@ const hikingapp = (remoteserver) => {
 				map.map.setStyle("mapbox://sprites/mapbox/satellite-v9");
 			}
 		}
-	})
-	);
+	});
 };
 //Expose ractive functions
 exports.hikingapp = hikingapp;
