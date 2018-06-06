@@ -7,7 +7,8 @@ class Mapboxgl {
 			container: "map", // container id
 			style: "mapbox://styles/mapbox/streets-v8",
 			center: [4.895168, 52.370216], // starting position
-			zoom: 9 // starting zoom
+			zoom: 9, // starting zoom
+			scrollZoom: false
 		});
 	}
 }
