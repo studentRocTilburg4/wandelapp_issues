@@ -18,12 +18,22 @@
         <div id="directions">
         <div id='map'>
             <div id="upload">
-            <div>
-                <input on-change="uploadgpx" type="file" name="file" id="file" class="inputfile" />
-                <label for="file"> Nieuwe gpx route... </label>
-                <div id="info"></div>
-            </div>
+                <div>
+                    <input on-change="uploadgpx" type="file" name="file" id="file" class="inputfile" />
+                    <label for="file"> Nieuwe gpx route... </label>
+                    <div id="info"></div>
+                </div>
                 <div on-click="['changeStyle', this]" class="switch">Verander de map weergaven</div>
+                <div>
+                    <label>
+                        Check automatisch waar ik ben.
+                        <input type="radio" name="center" id="centerMe">
+                    </label>
+                    <label>
+                        Check <strong>niet</strong> automatisch waar ik ben.
+                        <input type="radio" name="center" id="notCenterMe" checked>
+                    </label>
+                </div>
             </div>
         </div>
         <div id="accordion">
