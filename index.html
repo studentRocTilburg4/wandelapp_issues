@@ -20,6 +20,14 @@
             <div id="info"></div>
         </div>
         <button on-click="['changeStyle', this]">Verander de map weergaven</button>
+        <label>
+            Check automatisch waar ik ben.
+            <input type="radio" name="center" id="centerMe">
+        </label>
+        <label>
+            Check <strong>niet</strong> automatisch waar ik ben.
+            <input type="radio" name="center" id="notCenterMe" checked>
+        </label>
         <div id="directions">
         <div id="accordion">
                 {{#each hikes}}
