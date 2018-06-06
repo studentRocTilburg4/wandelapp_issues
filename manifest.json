@@ -4,10 +4,12 @@
     "icons": [
         {
             "src": "/img/marker.svg",
+            "type": "svg",
             "size": "192px"
         },
         {
             "src": "/img/marker.svg",
+            "type": "svg",
             "size": "512px"
         }
     ],
