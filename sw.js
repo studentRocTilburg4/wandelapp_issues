@@ -11,7 +11,7 @@ const urlsToCache = [
     'https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/routes?cuid=test',
 ];
 
-self.addEventListener('install',    function(event) {
+self.addEventListener('install', function(event) {
     // Perform install steps
     event.waitUntil(
         caches.open('sw-wandelapp-cache')
