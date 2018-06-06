@@ -27,6 +27,7 @@ body {
     transition: opacity .5s;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .switch{
     font-size: 20px;
@@ -81,9 +82,29 @@ body {
     border: none;
     cursor: pointer;
     padding: 10px;
+    margin-top: 10px;
+
 }
 #icon1{
     width: 20px;
     height: 20px;
 }
 
+.center{
+    visibility: hidden;
+    position: absolute;
+}
+.checkInfo{
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-size: 20px;
+    width: 300px;
+    color: white;
+    background-color: #D53741;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+}
+.center:checked + .checkInfo{
+    border: 2px solid black;
+}

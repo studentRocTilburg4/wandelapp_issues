@@ -19,20 +19,24 @@
         <div id='map'>
             <div id="upload">
                 <div>
-                    <input on-change="uploadgpx" type="file" name="file" id="file" class="inputfile" />
-                    <label for="file"> Nieuwe gpx route... </label>
-                    <div id="info"></div>
+                    <div>
+                        <input on-change="uploadgpx" type="file" name="file" id="file" class="inputfile" />
+                        <label for="file"> Nieuwe gpx route... </label>
+                        <div id="info"></div>
+                    </div>
+                    <div on-click="['changeStyle', this]" class="switch">Verander de map weergaven</div>
                 </div>
-                <div on-click="['changeStyle', this]" class="switch">Verander de map weergaven</div>
                 <div>
-                    <label>
-                        Check automatisch waar ik ben.
-                        <input type="radio" name="center" id="centerMe">
-                    </label>
-                    <label>
-                        Check <strong>niet</strong> automatisch waar ik ben.
-                        <input type="radio" name="center" id="notCenterMe" checked>
-                    </label>
+                    <div>
+                        <label class='centerBtn'>
+                            <input type="radio" name="center" id="centerMe" class='center'>
+                            <p class='checkInfo'>Check automatisch waar ik ben.</p>
+                        </label>
+                        <label class='centerBtn'>
+                            <input type="radio" name="center" id="notCenterMe" class='center' checked>
+                            <p class='checkInfo'>Check <strong>niet</strong> automatisch waar ik ben.</p>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
