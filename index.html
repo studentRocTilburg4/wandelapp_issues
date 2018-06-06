@@ -13,21 +13,32 @@
 
         <!-- Mapbox -->
         <!-- Info & upload -->
-        <div id="upload">
-            <input on-change="uploadgpx" type="file" name="file" id="file" class="inputfile" />
-            <label for="file"> Nieuwe gpx route... </label>
-            <div id="info"></div>
-        </div>
-        <button on-click="['changeStyle', this]">Verander de map weergaven</button>
-        <label>
-            Check automatisch waar ik ben.
-            <input type="radio" name="center" id="centerMe">
-        </label>
-        <label>
-            Check <strong>niet</strong> automatisch waar ik ben.
-            <input type="radio" name="center" id="notCenterMe" checked>
-        </label>
+
         <div id="directions">
+        <div id='map'>
+            <div id="upload">
+                <div>
+                    <div>
+                        <input on-change="uploadgpx" type="file" name="file" id="file" class="inputfile" />
+                        <label for="file"> Nieuwe gpx route... </label>
+                        <div id="info"></div>
+                    </div>
+                    <div on-click="['changeStyle', this]" class="switch">Verander de map weergaven</div>
+                </div>
+                <div>
+                    <div>
+                        <label class='centerBtn'>
+                            <input type="radio" name="center" id="centerMe" class='center'>
+                            <p class='checkInfo'>Check automatisch waar ik ben.</p>
+                        </label>
+                        <label class='centerBtn'>
+                            <input type="radio" name="center" id="notCenterMe" class='center' checked>
+                            <p class='checkInfo'>Check <strong>niet</strong> automatisch waar ik ben.</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="accordion">
                 {{#each hikes}}
                     <h1 on-click="['collapse', data._id, this]">wandeling {{data.json.features.0.properties.name}}</h1>
@@ -35,9 +46,7 @@
                         {{data.json.features.0.properties.desc}}
                     </div>
                 {{/each}}
-            </div>
-            <div id='map'></div>
-
+        </div>
             <!-- Routes list -->
 
         </div>

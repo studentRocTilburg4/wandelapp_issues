@@ -5,70 +5,106 @@
 body {
     line-height: 1.4em;
 }
-#container{
-    min-height: 100vh;
-    overflow-y: hidden;
-}
+
 #directions{
+    /*display: flex;*/
+}
+#map {
+    height: 80vh;
+    flex: 1;
+    position: relative;
+}
+#upload {
     display: flex;
+    flex: 1;
+    flex-direction: column;
+    z-index: 20;
+    height: 200px;
+    min-width: 100%;
+    background-color: rgba(255, 0 , 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    transition: opacity .5s;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.switch{
+    font-size: 20px;
+    width: 300px;
+    font-weight: 700;
+    color: white;
+    background-color: #D53741;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+.mapboxgl-canvas{
+    max-width: 100%;
 }
 #accordion {
     background-color: #eee;
-    overflow: scroll;
-    flex: 1;
-    height: 100vh;
+    padding-top: 20px;
+    position: relative;
 }
-#accordion div {
+#accordion > div {
     font-size:1.2em;
     line-height: 1.2em;
     display:none;
     margin-bottom: 2em;
 }
-#accordion h1, #info h1{
+#accordion > h1, #info > h1{
     margin-bottom: 0.6em;
     font-size: 1.4em;
-    color: #cd1143;
+    color: #D53741;
 }
-#map {
-    /*height: 100vh;*/
-    min-height: 100vh;
-    flex: 2;
+.marker {
+   display: block;
+   cursor: pointer;
+   background-image: url(../img/marker.svg); /* should be 20px by 20px, important for offset!! */
+   background-size: contain;
+   width:20px;
+   height:20px;
 }
-#upload {
-    transition: opacity .5s;
-    opacity: 1;
-    background-color: #ddd;
-    position: relative;
-    top: 0;
-}
- .marker {
-       display: block;
-       cursor: pointer;
-       background-image: url(../img/marker.svg); /* should be 20px by 20px, important for offset!! */
-       background-size: contain;
-       width:20px;
-       height:20px;
-   }
 
 .inputfile {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
+    width: 1px;
+    height: 1px;
     overflow: hidden;
-    position: absolute;
-    z-index: -1;
 }
 .inputfile + label {
-    font-size: 1.25em;
+    font-size: 20px;
     font-weight: 700;
+    width: 300px;
     color: white;
-    background-color: #cd1143;
-    display: inline-block;
-    border: 1px solid #cd1143;
+    background-color: #D53741;
+    display: block;
+    border: none;
     cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+
 }
 #icon1{
     width: 20px;
     height: 20px;
 }
 
+.center{
+    visibility: hidden;
+    position: absolute;
+}
+.checkInfo{
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-size: 20px;
+    width: 300px;
+    color: white;
+    background-color: #D53741;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+}
+.center:checked + .checkInfo{
+    border: 2px solid black;
+}
