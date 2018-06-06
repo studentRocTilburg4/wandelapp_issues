@@ -57,6 +57,7 @@ self.addEventListener('fetch', function(event) {
                         !matching || matching.status == 404
                         ? Promise.reject("no-match")
                         : matching;
+                    
                     return report;
                 })   
             })
