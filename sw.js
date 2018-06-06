@@ -1,5 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v2';
-var urlsToCache = [
+const urlsToCache = [
     '/',
     'css/wandelapp.css',
     'src/app.js',
@@ -11,10 +10,11 @@ var urlsToCache = [
     'sw.js',
     'https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/routes?cuid=test',
 ];
+
 self.addEventListener('install',    function(event) {
     // Perform install steps
     event.waitUntil(
-        caches.open(CACHE_NAME)
+        caches.open('sw-wandelapp-cache')
             .then(function(cache) {
                 console.log('Opened cache');
                 return cache.addAll(urlsToCache);
@@ -37,7 +37,7 @@ self.addEventListener('fetch', function(event) {
 
                             // let responseToCache = response.clone();
                             
-                            // caches.open(CACHE_NAME)
+                            // caches.open('sw-wandelapp-cache')
                             //     .then(function(cache) {
                             //         cache.put(event.request, responseToCache);
                             //     });
