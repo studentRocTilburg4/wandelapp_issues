@@ -38,9 +38,8 @@ addEventListener('fetch', function(event) {
               })
               .catch(function(err) {       // fallback mechanism
                 return caches.open('sw-wandelapp-cache')
-                  .then(function(cache) {
-                    return cache.match('index.html');
-                  });
+                  
+                console.log("Fallback mechanism activated... Error : ", err);
               });
           }
         })
