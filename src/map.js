@@ -13,7 +13,6 @@ class Mapboxgl {
 }
 
 export default class Map {
-
 	//Init
 	constructor() {
 		this.map = new Mapboxgl();
@@ -21,7 +20,7 @@ export default class Map {
 		this.youarehere = null;
 		this.el = document.createElement("div");
 		this.el.className = "marker";
-
+		this.map.setZoom(this.defaultzoomlevel);
 
 		this.map.on("click", function (e) {
 			const features = this.map.queryRenderedFeatures(e.point, { layers: ["poi"] });
@@ -47,7 +46,6 @@ export default class Map {
 			return;
 		}
 		this.map.setCenter(lnglat);
-		this.map.setZoom(this.defaultzoomlevel);
 	}
 
 	//Show route and set events
@@ -81,7 +79,7 @@ export default class Map {
 			}
 		};
 		this.map.addSource("poi", poi);
-		let routelayer = this.map.addLayer({
+		this.map.addLayer({
 			"id": "poi",
 			"type": "symbol",
 			"source": "poi",
@@ -130,7 +128,7 @@ export default class Map {
 	geo_success(position) {
 		if (this.youarehere) {
 			this.youarehere.remove();
-		}
+		}	
 		
 		const location = [position.coords.longitude, position.coords.latitude];
 
