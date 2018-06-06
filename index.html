@@ -14,13 +14,18 @@
 
         <!-- Mapbox -->
         <!-- Info & upload -->
-        <div id="upload">
-            <input on-change="uploadgpx" type="file" name="file" id="file" class="inputfile" />
-            <label for="file"> Nieuwe gpx route... </label>
-            <div id="info"></div>
-        </div>
-        <button on-click="['changeStyle', this]">Verander de map weergaven</button>
+
         <div id="directions">
+        <div id='map'>
+            <div id="upload">
+            <div>
+                <input on-change="uploadgpx" type="file" name="file" id="file" class="inputfile" />
+                <label for="file"> Nieuwe gpx route... </label>
+                <div id="info"></div>
+            </div>
+                <div on-click="['changeStyle', this]" class="switch">Verander de map weergaven</div>
+            </div>
+        </div>
         <div id="accordion">
                 {{#each hikes}}
                     <h1 on-click="['collapse', data._id, this]">wandeling {{data.json.features.0.properties.name}}</h1>
@@ -28,9 +33,7 @@
                         {{data.json.features.0.properties.desc}}
                     </div>
                 {{/each}}
-            </div>
-            <div id='map'></div>
-
+        </div>
             <!-- Routes list -->
 
         </div>
