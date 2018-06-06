@@ -5,26 +5,14 @@ import {getroutesjson, posttextfile} from "./routes";
 
 const hikingapp = (remoteserver) => {
 	"use strict";
-
-	//Init
-	const ractive_ui = new Ractive({
-		el: "#container",
-		template: "#template",
-		debug: true
-	});
-	let map = null;
-
-	// todo: Get cuid from localstorage if there is one. Otherwise ask backend (wandelappbackend_issues_v2) for new cuid:
-	if(!localStorage.getItem("cuid")){
-		fetch("https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/cuid")
-			.then(function(response){
-				return response.json();
-			})
-			.then(function(myJson) {
-				localStorage.setItem("cuid", myJson.cuid);
-			});
-	} else {
-		const cuid = localStorage.getItem("cuid");
+	function createHikingApp(cuid){
+		//Init
+		const ractive_ui = new Ractive({
+			el: "#container",
+			template: "#template",
+			debug: true
+		});
+		let map = null;
 
 		ractive_ui.on("complete", () => {
 			//New mapbox-gl map
@@ -53,7 +41,7 @@ const hikingapp = (remoteserver) => {
 				}
 			}, 1000);
 		});
-	
+
 		//Events
 		ractive_ui.on({
 			"collapse": (event, filename, routeobj) => {			
@@ -63,7 +51,7 @@ const hikingapp = (remoteserver) => {
 				}
 				const route = document.getElementById(`route${filename}`);
 				route.style.display = "block";
-	
+
 				//Show chosen route on map
 				map.showroute(routeobj.data.json);
 			},
@@ -80,7 +68,7 @@ const hikingapp = (remoteserver) => {
 									.then(
 										(routesjson) => {
 											//Show success
-	
+
 											info.innerText = "Route is toegevoegd";
 											ractive_ui.set("hikes", routesjson);
 											//Show chosen route
@@ -114,13 +102,21 @@ const hikingapp = (remoteserver) => {
 				}
 			}
 		});
-	};
 	}
-	// todo: therefor implement getcuid function in routes.js module!
-	// cuid is needed to get only the routes that belong to this cuid.
-	 // todo: Temporarily use a dummy cuid (with the result that all app users see all routes!)
-
-	//Wait until Ractive is ready
-	
+	// todo: Get cuid from localstorage if there is one. Otherwise ask backend (wandelappbackend_issues_v2) for new cuid:
+	if(!localStorage.getItem("cuid")){
+		fetch("https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/cuid")
+			.then(function(response){
+				return response.json();
+			})
+			.then(function(myJson) {
+				localStorage.setItem("cuid", myJson.cuid);
+				createHikingApp(localStorage.getItem("cuid"));
+			});
+	} else {
+		
+		createHikingApp(localStorage.getItem("cuid"));
+	}
+};
 //Expose ractive functions
 exports.hikingapp = hikingapp;
