@@ -46,5 +46,8 @@ self.addEventListener('fetch', function(event) {
                     )
                 }
             )
+            .catch(function(error) {
+                console.log("Failed to retrieve response.")
+            })
     );
 });
