@@ -8,6 +8,7 @@ var urlsToCache = [
     'src/map.js',
     'src/routes.js',
     'js/app_es5.js',
+    'sw.js',
     'https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/routes?cuid=test',
 ];
 self.addEventListener('install', function(event) {
