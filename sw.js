@@ -11,7 +11,7 @@ var urlsToCache = [
     'sw.js',
     'https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/routes?cuid=test',
 ];
-self.addEventListener('install', function(event) {
+self.addEventListener('install',    function(event) {
     // Perform install steps
     event.waitUntil(
         caches.open(CACHE_NAME)
@@ -29,8 +29,7 @@ self.addEventListener('fetch', function(event) {
                     if (response) {
                         return response;
                     }
-                    let fetchRequest = event.request.clone();
-                    return fetch(fetchRequest).then(
+                    return fetch(event.request).then(
                         function(response) {
                             if(!response || response.status !== 200 || response.type !== "basic") {
                                     return response;
