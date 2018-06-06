@@ -46,5 +46,20 @@ self.addEventListener('fetch', function(event) {
                     )
                 }
             )
+            .catch(function(error) {
+                console.log("Service Worker Network Request Failed. Serving content from cache :" + error);
+                
+                return caches.open(CACHE_NAME)
+            }
+            .then(function(cache) {
+                return cache.match(event.request).then(function (matching) {
+                    let report =
+                        !matching || matching.status == 404
+                        ? Promise.reject("no-match")
+                        : matching;
+                    return report;
+                })   
+            })
+            )
     );
 });
