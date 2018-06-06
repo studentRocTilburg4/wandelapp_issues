@@ -21,30 +21,28 @@ self.addEventListener('install',    function(event) {
             })
     );
 });
-self.addEventListener('fetch', function(event) {
+addEventListener('fetch', function(event) {
     event.respondWith(
-        caches.match(event.request)
-            .then(function(response) {
-                    // Cache hit - return response
-                    if (response) {
-                        return response;
-                    }
-                    return fetch(event.request).then(
-                        function(response) {
-                            if(!response || response.status !== 200 || response.type !== "basic") {
-                                    return response;
-                            }
-
-                            // let responseToCache = response.clone();
-                            
-                            // caches.open('sw-wandelapp-cache')
-                            //     .then(function(cache) {
-                            //         cache.put(event.request, responseToCache);
-                            //     });
-                            // return response;
-                        }
-                    )
-                }
-            )
+      caches.match(event.request)
+        .then(function(response) {
+          if (response) {
+            return response;     // if valid response is found in cache return it
+          } else {
+            return fetch(event.request)     //fetch from internet
+              .then(function(res) {
+                return caches.open('sw-wandelapp-cache')
+                  .then(function(cache) {
+                    cache.put(event.request.url, res.clone());    //save the response for future
+                    return res;   // return the fetched data
+                  })
+              })
+              .catch(function(err) {       // fallback mechanism
+                return caches.open('sw-wandelapp-cache')
+                  .then(function(cache) {
+                    return cache.match('index.html');
+                  });
+              });
+          }
+        })
     );
-});
+  }); 
