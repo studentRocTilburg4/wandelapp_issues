@@ -1,6 +1,4 @@
 npm-debug.log
 src/.DS_Store
 node_modules
-js/
-.idea
 .eslintrc.js
