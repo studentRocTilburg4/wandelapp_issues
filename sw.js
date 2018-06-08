@@ -46,20 +46,17 @@ self.addEventListener('fetch', function(event) {
                 console.log('Response from network is:', response);
                 Console.log('Adding response to cache...')
                 
-                caches.open(CACHE_NAME)
-                    .then(function(cache) {
-                        return cache.add(response)
-                            .then(function() {
+                caches.open(CACHE_NAME).then(function(cache) {
+                        return cache.add(response).then(function() {
                                 console.log("Response Cached!")
-                            })
-                            .catch(function(error) {
+                            }).catch(function(error) {
                                 console.log("Error caching response!", error)
-                            })
-                    })
+                            });
+                    });
 
                 return response
             }).catch(function(error) {
-                console.error('Fetching failed:', error)
+                console.log('Fetching failed:', error)
             });
         })
     );
