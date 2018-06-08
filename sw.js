@@ -1,26 +1,30 @@
 var CACHE_NAME = 'wandelapp-offline-cache';
-var urlsToCache = [
-    '/',
-    'css/wandelapp.css',
-    'src/app.js',
-    'src/cache-polyfill.js',
-    'src/hikingapp.js',
-    'src/map.js',
-    'src/routes.js',
-    'js/app_es5.js',
-    'sw.js',
-    'https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/routes?cuid=test',
-];
+
 self.addEventListener('install', function(event) {
     // Perform install steps
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(function(cache) {
                 console.log('Opened cache');
-                return cache.addAll(urlsToCache);
-            })
+                return cache.addAll([
+                    '/',
+                    'index.html',
+                    '/src/app.js',
+                    '/src/hikingapp.js',
+                    '/src/map.js',
+                    '/src/routes.js',
+                    '/src/',
+                    '/js/app_es5.js',
+                    '/css/wandelapp.css',
+                    'https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/routes?cuid=test'
+                ]).then(function() {
+                    console.log('Items cached.', cache);
+                })
+            }
+        )
     );
 });
+
 self.addEventListener('fetch', function(event) {
     console.log('Handling fetch event for', event.request.url);
 
