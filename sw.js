@@ -21,7 +21,7 @@ self.addEventListener('install', function(event) {
                     console.log('Items cached.', cache);
 
                     return;
-                    
+
                 }).catch(function(error) {
                     console.log('An error occurred caching items:', error)
                 })
@@ -44,6 +44,18 @@ self.addEventListener('fetch', function(event) {
 
             return fetch(event.request).then(function(response) {
                 console.log('Response from network is:', response);
+                Console.log('Adding response to cache...')
+                
+                caches.open(CACHE_NAME)
+                    .then(function(cache) {
+                        return cache.add(response)
+                            .then(function() {
+                                console.log("Response Cached!")
+                            })
+                            .catch(function(error) {
+                                console.log("Error caching response!", error)
+                            })
+                    })
 
                 return response
             }).catch(function(error) {
