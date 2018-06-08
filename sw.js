@@ -19,6 +19,8 @@ self.addEventListener('install', function(event) {
                     'https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/routes?cuid=test'
                 ]).then(function() {
                     console.log('Items cached.', cache);
+                }).catch(function(error) {
+                    console,log('An error occurred caching items:', error)
                 })
             }
         )
