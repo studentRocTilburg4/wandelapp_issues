@@ -9,7 +9,7 @@
         },
         {
             "src": "img/marker512px.gif",
-            "sizes": "192x192",
+            "sizes": "512x512",
             "type": "image/gif"
         }
     ],
