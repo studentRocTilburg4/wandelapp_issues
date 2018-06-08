@@ -20,7 +20,7 @@ self.addEventListener('install', function(event) {
                 ]).then(function() {
                     console.log('Items cached.', cache);
                 }).catch(function(error) {
-                    console,log('An error occurred caching items:', error)
+                    console.log('An error occurred caching items:', error)
                 })
             }
         )
