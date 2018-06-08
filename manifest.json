@@ -3,13 +3,13 @@
     "name": "Wandel-app",
     "icons": [
         {
-            "src": "/img/marker.svg",
-            "type": "svg",
+            "src": "/img/marker192px.gif",
+            "type": "gif",
             "size": "192px"
         },
         {
-            "src": "/img/marker.svg",
-            "type": "svg",
+            "src": "/img/marker512px.gif",
+            "type": "gif",
             "size": "512px"
         }
     ],
