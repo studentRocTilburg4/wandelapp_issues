@@ -1,18 +1,10 @@
 {
     "short_name": "Wandel-app",
     "name": "Wandel-app",
-    "icons": [
-        {
-            "src": "/img/marker192px.gif",
-            "type": "gif",
-            "size": "192px"
-        },
-        {
-            "src": "/img/marker512px.gif",
-            "type": "gif",
-            "size": "512px"
-        }
-    ],
+    "icons": {
+        "192": "/img/marker.svg",
+        "512": "/img/marker.svg"
+    },
     "start_url": "index.html",
     "background_color": "white",
     "display": "standalone",
