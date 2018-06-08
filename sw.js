@@ -8,12 +8,6 @@ self.addEventListener('install', function(event) {
                 console.log('Opened cache');
                 return cache.addAll([
                     '/',
-                    'index.html',
-                    'src/app.js',
-                    'src/hikingapp.js',
-                    'src/map.js',
-                    'src/routes.js',
-                    'src/',
                     'js/app_es5.js',
                     'css/wandelapp.css',
                     'https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/routes?cuid=test'
@@ -41,16 +35,7 @@ self.addEventListener('fetch', function(event) {
 
             return fetch(event.request).then(function(response) {
                 console.log('Response from network is:', response);
-                Console.log('Adding response to cache...')
                 
-                caches.open(CACHE_NAME).then(function(cache) {
-                        return cache.add(response).then(function() {
-                                console.log("Response Cached!")
-                            }).catch(function(error) {
-                                console.log("Error caching response!", error)
-                            });
-                    });
-
                 return response
             }).catch(function(error) {
                 console.log('Fetching failed:', error)
