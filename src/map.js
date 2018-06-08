@@ -22,6 +22,7 @@ export default class Map {
 		this.el = document.createElement("div");
 		this.el.className = "marker";
 		this.map.setZoom(this.defaultzoomlevel);
+		this.map.addControl(new mapboxgl.NavigationControl());
 
 		this.map.on("click", function (e) {
 			const features = this.map.queryRenderedFeatures(e.point, { layers: ["poi"] });
