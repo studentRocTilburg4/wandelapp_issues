@@ -13,10 +13,10 @@ self.addEventListener('install', function(event) {
                     'https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/routes?cuid=test'
                 ]).then(function() {
                     console.log('Items cached.');
-                })
-            }.catch(function(error) {
-                console.error('Items failed to cache:', error)
-            })
+                }).catch(function(error) {
+                    console.error('Items failed to cache:', error)
+                });
+            }
         )
     );
 });
@@ -35,7 +35,7 @@ self.addEventListener('fetch', function(event) {
 
             return fetch(event.request).then(function(response) {
                 console.log('Response from network is:', response);
-                
+
                 return response
             }).catch(function(error) {
                 console.log('Fetching failed:', error)
