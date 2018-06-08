@@ -23,6 +23,12 @@ export default class Map {
 		this.el.className = "marker";
 		this.map.setZoom(this.defaultzoomlevel);
 		this.map.addControl(new mapboxgl.NavigationControl());
+		this.map.addControl(new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            trackUserLocation: true
+        }));
 
 		this.map.on("click", function (e) {
 			const features = this.map.queryRenderedFeatures(e.point, { layers: ["poi"] });
