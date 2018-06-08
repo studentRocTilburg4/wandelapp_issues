@@ -18,14 +18,11 @@ self.addEventListener('install', function(event) {
                     'css/wandelapp.css',
                     'https://nodejs-mongo-persistent-wandelappbackend-v4.a3c1.starter-us-west-1.openshiftapps.com/routes?cuid=test'
                 ]).then(function() {
-                    console.log('Items cached.', cache);
-
-                    return;
-
-                }).catch(function(error) {
-                    console.log('An error occurred caching items:', error)
+                    console.log('Items cached.');
                 })
-            }
+            }.catch(function(error) {
+                console.error('Items failed to cache:', error)
+            })
         )
     );
 });
