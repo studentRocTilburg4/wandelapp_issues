@@ -38221,6 +38221,13 @@ var Map = function () {
 		this.el = document.createElement("div");
 		this.el.className = "marker";
 		this.map.setZoom(this.defaultzoomlevel);
+		this.map.addControl(new _mapboxGl2.default.NavigationControl());
+		this.map.addControl(new _mapboxGl2.default.GeolocateControl({
+			positionOptions: {
+				enableHighAccuracy: true
+			},
+			trackUserLocation: true
+		}));
 
 		this.map.on("click", function (e) {
 			var features = this.map.queryRenderedFeatures(e.point, { layers: ["poi"] });
