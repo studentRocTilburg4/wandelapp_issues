@@ -6,6 +6,9 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel='manifest' href='manifest.json'>
+    <meta name='theme-color' content='red'>
+    <link rel='icon' sizes='192x192' href='img/marker192px.gif'>
 </head>
 <body>
 <!-- should be run on localhost -->
@@ -48,17 +51,37 @@
                         {{data.json.features.0.properties.desc}}
                     </div>
                 {{/each}}
-        </div>
-            <!-- Routes list -->
+            </div>
+            <div id='map'></div>
+
+            <!-- Routes list -->    
 
         </div>
+
+
+
     </script>
 
-<!-- Ractive div/template -->
-<div id='container'></div>
+    <!-- Ractive div/template -->
+    <div id='container'></div>
 
-<link rel="stylesheet" type="text/css" href="css/cssreset.css" />
-<link rel="stylesheet" type="text/css" href="css/wandelapp.css" />
-<script src='js/app_es5.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/cssreset.css" />
+    <link rel="stylesheet" type="text/css" href="css/wandelapp.css" />
+    <script src='js/app_es5.js'></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js')
+                .then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful', registration.scope);
+                })
+                .catch(function(err) {
+                    console.log('Serviceworker registration failed.', err);
+                })
+            })
+        }
+    </script>
+    <noscript>BOI get a fukin' up to date browser faggots. Damn.</noscript>
 </body>
 </html>
