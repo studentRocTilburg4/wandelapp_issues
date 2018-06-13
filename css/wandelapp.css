@@ -46,17 +46,22 @@ body {
     background-color: #eee;
     padding-top: 20px;
     position: relative;
+
 }
 #accordion > div {
     font-size:1.2em;
     line-height: 1.2em;
     display:none;
     margin-bottom: 2em;
+    padding-left: 20px;
 }
 #accordion > h1, #info > h1{
     margin-bottom: 0.6em;
     font-size: 1.4em;
     color: #D53741;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
 }
 .marker {
    display: block;
@@ -108,11 +113,14 @@ body {
 .center:checked + .checkInfo{
     border: 2px solid black;
 }
+#option{
+    display: none;
+}
 
 @media (max-width: 775px) {
     #accordion > div{
-        position: relative;
-        top: -328px;
+        position: absolute;
+        top: -220px;
         z-index: 1000;
         background-color: #EEEEEE;
         overflow-y: scroll;
@@ -121,5 +129,8 @@ body {
     }
     #accordion > h1{
         padding-left: 20px;
+    }
+    #option{
+        display: block;
     }
 }
