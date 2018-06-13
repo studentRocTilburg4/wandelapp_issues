@@ -108,3 +108,18 @@ body {
 .center:checked + .checkInfo{
     border: 2px solid black;
 }
+
+@media (max-width: 775px) {
+    #accordion > div{
+        position: relative;
+        top: -328px;
+        z-index: 1000;
+        background-color: #EEEEEE;
+        overflow-y: scroll;
+        height: 201px;
+        padding: 20px 20px 0 20px;
+    }
+    #accordion > h1{
+        padding-left: 20px;
+    }
+}

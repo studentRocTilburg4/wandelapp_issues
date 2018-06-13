@@ -4,6 +4,7 @@
     <meta charset=utf-8 />
     <title>Wandelapp</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name="viewport" content="width=device-width; maximum-scale=1; minimum-scale=1;" />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
     <link rel='manifest' href='manifest.json'>
@@ -30,21 +31,10 @@
                     </div>
                     <div on-click="['changeStyle', this]" class="switch">Verander de map weergaven</div>
                 </div>
-                <div>
-                    <div>
-                        <label class='centerBtn'>
-                            <input type="radio" name="center" id="centerMe" class='center'>
-                            <p class='checkInfo'>Check automatisch waar ik ben.</p>
-                        </label>
-                        <label class='centerBtn'>
-                            <input type="radio" name="center" id="notCenterMe" class='center' checked>
-                            <p class='checkInfo'>Check <strong>niet</strong> automatisch waar ik ben.</p>
-                        </label>
-                    </div>
-                </div>
             </div>
         </div>
         <div id="accordion">
+        <h1 id='option'> show options</h1>
                 {{#each hikes}}
                     <h1 on-click="['collapse', data._id, this]">wandeling {{data.json.features.0.properties.name}}</h1>
                     <div class="item" id="route{{data._id}}">
@@ -53,13 +43,8 @@
                 {{/each}}
             </div>
             <div id='map'></div>
-
-            <!-- Routes list -->    
-
+            <!-- Routes list -->
         </div>
-
-
-
     </script>
 
     <!-- Ractive div/template -->
