@@ -24,11 +24,11 @@ export default class Map {
 		this.map.setZoom(this.defaultzoomlevel);
 		this.map.addControl(new mapboxgl.NavigationControl());
 		this.map.addControl(new mapboxgl.GeolocateControl({
-            positionOptions: {
-                enableHighAccuracy: true
-            },
-            trackUserLocation: true
-        }));
+			positionOptions: {
+				enableHighAccuracy: true
+			},
+			trackUserLocation: true
+		}));
 
 		this.map.on("click", function (e) {
 			const features = this.map.queryRenderedFeatures(e.point, { layers: ["poi"] });
@@ -38,7 +38,7 @@ export default class Map {
 
 			const feature = features[0];
 
-			const name = (feature.properties.name === undefined) ? "" : feature.properties.name;
+			// const name = (feature.properties.name === undefined) ? "" : feature.properties.name;
 			const desc = (feature.properties.desc === undefined) ? "" : feature.properties.desc;
 			//Create and show popup
 			new mapboxgl.Popup()
