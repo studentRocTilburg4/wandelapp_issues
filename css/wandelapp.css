@@ -136,4 +136,8 @@ body {
     #option{
         display: block;
     }
+    #upload{
+        flex-wrap: nowrap;
+        height: 270px;
+    }
 }
