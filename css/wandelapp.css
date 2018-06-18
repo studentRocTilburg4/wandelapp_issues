@@ -48,6 +48,9 @@ body {
     position: relative;
 
 }
+.btn{
+    height: 70px;
+}
 #accordion > div {
     font-size:1.2em;
     line-height: 1.2em;
