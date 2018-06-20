@@ -42,7 +42,7 @@ const hikingapp = (remoteserver) => {
 			}, 1000);
 		});
 
-        //Events
+		//Events
 		ractive_ui.on({
 			"collapse": (event, filename, routeobj) => {			
 				const item = document.getElementsByClassName("item");
@@ -55,13 +55,13 @@ const hikingapp = (remoteserver) => {
 				//Show chosen route on map
 				map.showroute(routeobj.data.json);
 
-                const option = document.getElementById('option');
-                option.addEventListener('click', function () {
-                    for (let x = 0; x < item.length; x++){
-                        item[x].style.display = "none";
-                    }
-                    console.log('a');
-                });
+				const option = document.getElementById("option");
+				option.addEventListener("click", function () {
+					for (let x = 0; x < item.length; x++){
+						item[x].style.display = "none";
+					}
+					console.log("a");
+				});
 
 			},
 			"uploadgpx": (event) => {
