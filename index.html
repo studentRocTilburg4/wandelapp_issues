@@ -3,8 +3,7 @@
 <head>
     <meta charset=utf-8 />
     <title>Wandelapp</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
     <link rel='manifest' href='manifest.json'>
     <meta name='theme-color' content='red'>
@@ -45,6 +44,7 @@
             </div>
         </div>
         <div id="accordion">
+        <h1 id='option'> show options</h1>
                 {{#each hikes}}
                     <h1 on-click="['collapse', data._id, this]">wandeling {{data.json.features.0.properties.name}}</h1>
                     <div class="item" id="route{{data._id}}">
@@ -53,13 +53,8 @@
                 {{/each}}
             </div>
             <div id='map'></div>
-
-            <!-- Routes list -->    
-
+            <!-- Routes list -->
         </div>
-
-
-
     </script>
 
     <!-- Ractive div/template -->
@@ -82,6 +77,6 @@
             })
         }
     </script>
-    <noscript>We as devolpers are value your customers oponion about javascript. but for the love of god turn it on</noscript>
+    <noscript>We as developers are value your customers opinion about Javascript, but for the love of god turn it on!</noscript>
 </body>
 </html>
